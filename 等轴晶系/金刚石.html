@@ -61,14 +61,39 @@ h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-
 .param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}
 .detail-table td{line-height:1.75}
 .source p{margin:7px 0}
-
 @media print{body{background:#fff}
 .page{max-width:none;margin:0;padding:0}
 .hero,section{box-shadow:none}
 .toolbar,.back{display:none}
 .structure-placeholder{break-inside:avoid}
 }
-  </style>
+  
+/* 移动端响应式布局：缩小页面比例并控制结构查看器高度 */
+@media screen and (max-width:720px){
+  html{font-size:15px}
+  body{font-size:14px;line-height:1.6;overflow-x:hidden}
+  .page{width:100%;max-width:none;margin:14px auto;padding:0 10px}
+  .back{margin-bottom:10px;font-size:13px}
+  .hero{border-left-width:5px;padding:14px 16px}
+  .hero h1{font-size:25px;letter-spacing:.02em}
+  .hero .en{font-size:14px}
+  section{margin:18px 0;border-top-width:1px}
+  h2{margin:0 0 8px;padding:8px 0 6px;font-size:18px}
+  .summary{font-size:14px;line-height:1.65;padding:11px 12px}
+  .detail-table{font-size:13px;table-layout:fixed}
+  .detail-table th,.detail-table td{padding:7px 8px;line-height:1.55;overflow-wrap:anywhere;word-break:break-word}
+  .detail-table th{white-space:nowrap}
+  .detail-table.two-col th{width:18%}
+  .detail-table.two-col td{width:32%}
+  .detail-table:not(.two-col) th{width:26%}
+  .detail-table:not(.two-col) td{width:74%}
+  .structure-controls{width:90%;gap:6px;margin:0 0 8px;padding:6px 8px;font-size:12px}
+  .axis-button{width:30px;height:28px;font-size:15px}
+  .structure-viewer{width:90%;height:auto;aspect-ratio:1.633 / 1;min-height:0;max-height:none;margin-left:0;margin-right:auto}
+  .structure-viewer canvas{height:100%;min-height:0!important}
+  .source p{margin:5px 0}
+}
+</style>
 </head>
 <body>
   <main class="page">
@@ -517,8 +542,8 @@ C1     C1      1.540   15_544 S
         const worldHeight = (camera.top - camera.bottom) / camera.zoom;
         const canvasWidth = canvas.clientWidth || canvas.width || 1;
         const canvasHeight = canvas.clientHeight || canvas.height || 1;
-        const marginX = worldWidth * 96 / canvasWidth;
-        const marginY = worldHeight * 92 / canvasHeight;
+        const marginX = worldWidth * (canvasWidth <= 720 ? 42 : 96) / canvasWidth;
+        const marginY = worldHeight * (canvasHeight <= 420 ? 42 : 92) / canvasHeight;
         const corner = target.clone()
           .addScaledVector(right, -worldWidth / 2 + marginX)
           .addScaledVector(up, -worldHeight / 2 + marginY)
