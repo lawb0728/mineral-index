@@ -62,7 +62,7 @@ h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-
 .to-top .to-top-arrow{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:10px solid currentColor}
 .to-top .to-top-label{font-size:12px;white-space:nowrap}
 @media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:720px){.page{margin:20px auto;padding:0 14px}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.reset-button{grid-column:1}.count{grid-column:2;justify-self:end}.filter-menu{position:static;margin-top:5px;box-shadow:none}.filter-option{white-space:normal}.cards{grid-template-columns:1fr}.to-top{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));width:48px;height:48px;font-size:11px}.to-top .to-top-arrow{border-left-width:7px;border-right-width:7px;border-bottom-width:9px}.to-top .to-top-label{font-size:11px}}
+@media (max-width:720px){.page{margin:20px auto;padding:0 14px}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.reset-button{grid-column:1;width:50%;justify-self:start;padding-left:6px;padding-right:6px}.count{grid-column:2;justify-self:end}.filter-menu{position:absolute;z-index:30;top:calc(100% + 5px);left:0;right:0;min-width:150px;margin-top:0;box-shadow:0 5px 16px rgba(34,49,59,.12)}.filter-option{white-space:nowrap}.cards{grid-template-columns:1fr}.to-top{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));width:48px;height:48px;font-size:11px}.to-top .to-top-arrow{border-left-width:7px;border-right-width:7px;border-bottom-width:9px}.to-top .to-top-label{font-size:11px}}
 @media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero{box-shadow:none}.toolbar,.back,.to-top{display:none}}
 </style>
 </head>
@@ -132,8 +132,6 @@ h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-
 <article class="card" data-name="黄钾铁矾 黄钾铁矾" data-elements="K Fe S O O H" data-category="硫酸盐矿物" data-system="三方晶系"><h3><a class="card-title" href="三方晶系/黄钾铁矾.html">黄钾铁矾</a></h3><div class="en">Jarosite</div><p><b>名称：</b>黄钾铁矾</p><p><b>分类：</b>硫酸盐矿物</p><p><b>化学式：</b>KFe<sup>3+</sup><sub>3</sub>(SO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub></p><p><b>晶系：</b>三方晶系</p></article>
 <article class="card" data-name="辉钼矿 辉钼矿" data-elements="Mo S" data-category="硫化物" data-system="六方晶系"><h3><a class="card-title" href="六方晶系/辉钼矿.html">辉钼矿</a></h3><div class="en">Molybdenite</div><p><b>名称：</b>辉钼矿</p><p><b>分类：</b>硫化物</p><p><b>化学式：</b>MoS<sub>2</sub></p><p><b>晶系：</b>六方晶系</p></article>
 <article class="card" data-name="黄铁矿 黄铁矿" data-elements="Fe S" data-category="硫化物" data-system="等轴晶系"><h3><a class="card-title" href="等轴晶系/黄铁矿.html">黄铁矿</a></h3><div class="en">Pyrite</div><p><b>名称：</b>黄铁矿</p><p><b>分类：</b>硫化物</p><p><b>化学式：</b>FeS<sub>2</sub></p><p><b>晶系：</b>等轴晶系</p></article>
-<article class="card" data-name="红色绿柱石 绿柱石" data-elements="Be Al Si O" data-category="硅酸盐矿物" data-system="六方晶系"><h3><a class="card-title" href="六方晶系/红色绿柱石.html">红色绿柱石</a></h3><div class="en">Red beryl</div><p><b>名称：</b>绿柱石</p><p><b>分类：</b>硅酸盐矿物</p><p><b>化学式：</b>Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub></p><p><b>晶系：</b>六方晶系</p></article>
-<article class="card" data-name="金刚石 金刚石" data-elements="C" data-category="自然元素矿物" data-system="等轴晶系"><h3><a class="card-title" href="等轴晶系/金刚石.html">金刚石</a></h3><div class="en">Diamond</div><p><b>名称：</b>金刚石</p><p><b>分类：</b>自然元素矿物</p><p><b>化学式：</b>C</p><p><b>晶系：</b>等轴晶系</p></article>
 <article class="card" data-name="金红石 金红石" data-elements="Ti O" data-category="氧化物矿物" data-system="四方晶系"><h3><a class="card-title" href="四方晶系/金红石.html">金红石</a></h3><div class="en">Rutile</div><p><b>名称：</b>金红石</p><p><b>分类：</b>氧化物矿物</p><p><b>化学式：</b>TiO<sub>2</sub></p><p><b>晶系：</b>四方晶系</p></article>
 <article class="card" data-name="尖晶石 尖晶石" data-elements="Mg Al O" data-category="氧化物矿物" data-system="等轴晶系"><h3><a class="card-title" href="等轴晶系/尖晶石.html">尖晶石</a></h3><div class="en">Spinel</div><p><b>名称：</b>尖晶石</p><p><b>分类：</b>氧化物矿物</p><p><b>化学式：</b>MgAl<sub>2</sub>O<sub>4</sub></p><p><b>晶系：</b>等轴晶系</p></article>
 <article class="card" data-name="孔雀石 孔雀石" data-elements="Cu C O O H" data-category="碳酸盐矿物" data-system="单斜晶系"><h3><a class="card-title" href="单斜晶系/孔雀石.html">孔雀石</a></h3><div class="en">Malachite</div><p><b>名称：</b>孔雀石</p><p><b>分类：</b>碳酸盐矿物</p><p><b>化学式：</b>Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub></p><p><b>晶系：</b>单斜晶系</p></article>
@@ -153,7 +151,6 @@ h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-
 <article class="card" data-name="石榴石 钙铝榴石" data-elements="Ca Mg Fe Mn Al Fe Cr Si O" data-category="硅酸盐矿物" data-system="等轴晶系"><h3><a class="card-title" href="等轴晶系/石榴石.html">石榴石</a></h3><div class="en">Garnet</div><p><b>名称：</b>钙铝榴石</p><p><b>分类：</b>硅酸盐矿物</p><p><b>化学式：</b>(Ca,Mg,Fe,Mn)<sub>3</sub>(Al,Fe,Cr)<sub>2</sub>(SiO<sub>4</sub>)<sub>3</sub></p><p><b>晶系：</b>等轴晶系</p></article>
 <article class="card" data-name="石墨 石墨" data-elements="C" data-category="自然元素矿物" data-system="六方晶系"><h3><a class="card-title" href="六方晶系/石墨.html">石墨</a></h3><div class="en">Graphite</div><p><b>名称：</b>石墨</p><p><b>分类：</b>自然元素矿物</p><p><b>化学式：</b>C</p><p><b>晶系：</b>六方晶系</p></article>
 <article class="card" data-name="沙漠玫瑰 石膏" data-elements="Ca S O H O" data-category="硫酸盐矿物" data-system="单斜晶系"><h3><a class="card-title" href="单斜晶系/石膏_沙漠玫瑰.html">沙漠玫瑰</a></h3><div class="en">Gypsum</div><p><b>名称：</b>石膏</p><p><b>分类：</b>硫酸盐矿物</p><p><b>化学式：</b>CaSO<sub>4</sub> · 2H<sub>2</sub>O</p><p><b>晶系：</b>单斜晶系</p></article>
-<article class="card" data-name="水晶 石英" data-elements="Si O" data-category="氧化物矿物" data-system="三方晶系"><h3><a class="card-title" href="三方晶系/水晶_石英.html">水晶</a></h3><div class="en">Quartz</div><p><b>名称：</b>石英</p><p><b>分类：</b>氧化物矿物</p><p><b>化学式：</b>SiO<sub>2</sub></p><p><b>晶系：</b>三方晶系</p></article>
 <article class="card" data-name="天青石 天青石" data-elements="Sr S O" data-category="硫酸盐矿物" data-system="斜方晶系"><h3><a class="card-title" href="斜方晶系/天青石.html">天青石</a></h3><div class="en">Celestine</div><p><b>名称：</b>天青石</p><p><b>分类：</b>硫酸盐矿物</p><p><b>化学式：</b>SrSO<sub>4</sub></p><p><b>晶系：</b>斜方晶系</p></article>
 <article class="card" data-name="天河石 微斜长石" data-elements="K Al Si O" data-category="硅酸盐矿物" data-system="三斜晶系"><h3><a class="card-title" href="三斜晶系/天河石_微斜长石.html">天河石</a></h3><div class="en">Microcline</div><p><b>名称：</b>微斜长石</p><p><b>分类：</b>硅酸盐矿物</p><p><b>化学式：</b>K(AlSi<sub>3</sub>O<sub>8</sub>)</p><p><b>晶系：</b>三斜晶系</p></article>
 <article class="card" data-name="铁闪锌矿 闪锌矿" data-elements="Zn Fe S" data-category="硫化物" data-system="等轴晶系"><h3><a class="card-title" href="等轴晶系/铁闪锌矿_闪锌矿型.html">铁闪锌矿</a></h3><div class="en">Sphalerite</div><p><b>名称：</b>闪锌矿</p><p><b>分类：</b>硫化物</p><p><b>化学式：</b>(Zn,Fe)S</p><p><b>晶系：</b>等轴晶系</p></article>
@@ -184,11 +181,32 @@ const cards=[...document.querySelectorAll('.card')];
 const count=document.getElementById('count');
 const toTop=document.getElementById('to-top');
 const DIRECTORY_SCROLL_KEY='mineral-directory-scroll-y';
+const DIRECTORY_STATE_KEY='mineral-directory-filter-state';
 const state={category:'',system:''};
 const oxygenCategories=new Set(['钒酸盐矿物','硅酸盐矿物','磷酸盐矿物','硫酸盐矿物','碳酸盐矿物','钨酸盐']);
 const normalize=value=>value.trim().toLowerCase();
+function saveDirectoryState(){
+  try{sessionStorage.setItem(DIRECTORY_STATE_KEY,JSON.stringify({query:input.value,category:state.category,system:state.system}));}catch(error){}
+}
 function saveDirectoryScroll(){
   try{sessionStorage.setItem(DIRECTORY_SCROLL_KEY,String(window.scrollY||window.pageYOffset||0));}catch(error){}
+  saveDirectoryState();
+}
+function restoreDirectoryState(){
+  try{
+    const saved=sessionStorage.getItem(DIRECTORY_STATE_KEY);
+    if(saved===null)return;
+    const restored=JSON.parse(saved);
+    input.value=typeof restored.query==='string'?restored.query:'';
+    state.category=typeof restored.category==='string'?restored.category:'';
+    state.system=typeof restored.system==='string'?restored.system:'';
+    document.querySelectorAll('.filter').forEach(filter=>{
+      const group=filter.dataset.filter;
+      const selected=state[group]||'';
+      filter.querySelector('.filter-label').textContent=(group==='category'?'分类':'晶系')+(selected?(selected==='__oxygen__'?'：含氧盐矿物':'：'+selected):'');
+      filter.querySelectorAll('.filter-option').forEach(option=>option.classList.toggle('active',option.dataset.value===selected));
+    });
+  }catch(error){}
 }
 function restoreDirectoryScroll(){
   try{
@@ -218,7 +236,7 @@ function filterCards(){
   });
   count.textContent=visible+' / '+cards.length+' 个条目';
 }
-input.addEventListener('input',filterCards);
+input.addEventListener('input',()=>{filterCards();saveDirectoryState();});
 cards.forEach(card=>{
   const link=card.querySelector('.card-title');
   if(link)link.addEventListener('click',saveDirectoryScroll);
@@ -234,6 +252,7 @@ document.querySelectorAll('.filter-option').forEach(option=>option.addEventListe
   option.closest('details').open=false;
   filter.open=false;
   filterCards();
+  saveDirectoryState();
 }));
 document.addEventListener('click',event=>{
   const currentFilter=event.target.closest('.filter');
@@ -242,6 +261,7 @@ document.addEventListener('click',event=>{
   });
 });
 document.getElementById('reset').addEventListener('click',()=>{
+  input.value='';
   state.category='';
   state.system='';
   document.querySelectorAll('.filter').forEach(filter=>{
@@ -250,10 +270,12 @@ document.getElementById('reset').addEventListener('click',()=>{
     filter.querySelectorAll('.filter-option').forEach(option=>option.classList.toggle('active',option.dataset.value===''));
   });
   filterCards();
+  saveDirectoryState();
 });
 toTop.addEventListener('click',()=>window.scrollTo({top:0,left:0,behavior:'smooth'}));
 window.addEventListener('scroll',updateToTop,{passive:true});
 window.addEventListener('pagehide',saveDirectoryScroll);
+restoreDirectoryState();
 filterCards();
 restoreDirectoryScroll();
 updateToTop();
