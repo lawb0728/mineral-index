@@ -1,0 +1,490 @@
+[
+  {
+    "label": "黄铁矿",
+    "family": "黄铁矿族",
+    "mindat_memberOf": "Pyrite Group",
+    "mindat_url": "https://www.mindat.org/min-3314.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "萤石",
+    "family": "萤石族",
+    "mindat_memberOf": "Fluorite Group",
+    "mindat_url": "https://www.mindat.org/min-1576.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "钙铝榴石",
+    "family": "石榴石超族",
+    "mindat_memberOf": "Garnet Group > Garnet Supergroup",
+    "mindat_url": "https://www.mindat.org/min-1755.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "自然银",
+    "family": "自然铜族",
+    "mindat_memberOf": "Copper Group",
+    "mindat_url": "https://www.mindat.org/min-3664.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "金刚石",
+    "family": "碳同质多象",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-1282.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "磁铁矿",
+    "family": "尖晶石超族",
+    "mindat_memberOf": "Spinel Subgroup > Oxyspinel Group > Spinel Supergroup",
+    "mindat_url": "https://www.mindat.org/min-2538.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "尖晶石",
+    "family": "尖晶石超族",
+    "mindat_memberOf": "Spinel Subgroup > Oxyspinel Group > Spinel Supergroup",
+    "mindat_url": "https://www.mindat.org/min-3729.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "方铅矿",
+    "family": "方铅矿族",
+    "mindat_memberOf": "Galena Group",
+    "mindat_url": "https://www.mindat.org/min-1641.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "青金石",
+    "family": "方钠石族",
+    "mindat_memberOf": "Sodalite Group > Feldspathoid Group",
+    "mindat_url": "https://www.mindat.org/min-2357.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "锆石",
+    "family": "锆石族",
+    "mindat_memberOf": "Zircon Group",
+    "mindat_url": "https://www.mindat.org/min-4421.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "锡石",
+    "family": "金红石族",
+    "mindat_memberOf": "Rutile Group",
+    "mindat_url": "https://www.mindat.org/min-917.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "白钨矿",
+    "family": "白钨矿族",
+    "mindat_memberOf": "Scheelite Group",
+    "mindat_url": "https://www.mindat.org/min-3560.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "金红石",
+    "family": "金红石族",
+    "mindat_memberOf": "Rutile Group",
+    "mindat_url": "https://www.mindat.org/min-3486.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "钒铅矿",
+    "family": "磷灰石超族",
+    "mindat_memberOf": "Apatite Group > Apatite Supergroup",
+    "mindat_url": "https://www.mindat.org/min-4139.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "白铅矿",
+    "family": "文石族",
+    "mindat_memberOf": "Aragonite Group",
+    "mindat_url": "https://www.mindat.org/min-934.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "黄铜矿",
+    "family": "黄铜矿族",
+    "mindat_memberOf": "Chalcopyrite Group",
+    "mindat_url": "https://www.mindat.org/min-955.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "水晶_石英",
+    "family": "二氧化硅族",
+    "mindat_memberOf": "Silica Group",
+    "mindat_url": "https://www.mindat.org/min-3337.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "石墨",
+    "family": "碳同质多象",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-1740.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "磷灰石",
+    "family": "磷灰石超族",
+    "mindat_memberOf": "Apatite Group > Apatite Supergroup",
+    "mindat_url": "https://www.mindat.org/min-1572.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "冰洲石_方解石",
+    "family": "方解石族",
+    "mindat_memberOf": "Calcite Group",
+    "mindat_url": "https://www.mindat.org/min-859.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "赤铁矿",
+    "family": "赤铁矿族",
+    "mindat_memberOf": "Hematite Group",
+    "mindat_url": "https://www.mindat.org/min-1856.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "电气石",
+    "family": "电气石族",
+    "mindat_memberOf": "Tourmaline Group",
+    "mindat_url": "https://www.mindat.org/min-3578.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "刚玉",
+    "family": "赤铁矿族",
+    "mindat_memberOf": "Hematite Group",
+    "mindat_url": "https://www.mindat.org/min-1136.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "菱镁矿",
+    "family": "方解石族",
+    "mindat_memberOf": "Calcite Group",
+    "mindat_url": "https://www.mindat.org/min-2482.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "朱砂",
+    "family": "辰砂族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-1052.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "黄钾铁矾",
+    "family": "明矾石超族",
+    "mindat_memberOf": "Alunite Group > Alunite Supergroup",
+    "mindat_url": "https://www.mindat.org/min-2078.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "托帕石",
+    "family": "黄玉族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-3996.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "橄榄石",
+    "family": "橄榄石族",
+    "mindat_memberOf": "Olivine Group",
+    "mindat_url": "https://www.mindat.org/min-1584.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "重晶石",
+    "family": "重晶石族",
+    "mindat_memberOf": "Baryte Group",
+    "mindat_url": "https://www.mindat.org/min-549.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "硫磺",
+    "family": "硫族",
+    "mindat_memberOf": "Sulphur Group",
+    "mindat_url": "https://www.mindat.org/min-3826.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "天青石",
+    "family": "重晶石族",
+    "mindat_memberOf": "Baryte Group",
+    "mindat_url": "https://www.mindat.org/min-927.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "霰石",
+    "family": "文石族",
+    "mindat_memberOf": "Aragonite Group",
+    "mindat_url": "https://www.mindat.org/min-307.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "红柱石",
+    "family": "铝硅酸盐多形族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-217.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "硬石膏",
+    "family": "硬石膏族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-234.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "孔雀石",
+    "family": "孔雀石—菱锌矿族",
+    "mindat_memberOf": "Malachite-Rosasite Group",
+    "mindat_url": "https://www.mindat.org/min-2550.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "蓝铜矿",
+    "family": "孔雀石—菱锌矿族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-447.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "石膏_沙漠玫瑰",
+    "family": "石膏超族",
+    "mindat_memberOf": "Gypsum Supergroup",
+    "mindat_url": "https://www.mindat.org/min-1784.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "白云母",
+    "family": "云母族",
+    "mindat_memberOf": "Dioctahedral mica Group > Mica Group",
+    "mindat_url": "https://www.mindat.org/min-2815.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "黑钨矿",
+    "family": "黑钨矿族",
+    "mindat_memberOf": "Wolframite Group > Columbite Supergroup",
+    "mindat_url": "https://www.mindat.org/min-1476.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "正长石",
+    "family": "碱性长石族",
+    "mindat_memberOf": "K Feldspar Group > Alkali Feldspar Group > Feldspar Group",
+    "mindat_url": "https://www.mindat.org/min-3026.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "透闪石",
+    "family": "角闪石超族",
+    "mindat_memberOf": "Tremolite Root Name Group > Calcium Amphibole Subgroup > w(OH,F,Cl)-dominant Amphibole Group > Amphibole Supergroup",
+    "mindat_url": "https://www.mindat.org/min-4011.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "天河石_微斜长石",
+    "family": "碱性长石族",
+    "mindat_memberOf": "K Feldspar Group > Alkali Feldspar Group > Feldspar Group",
+    "mindat_url": "https://www.mindat.org/min-2704.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "蓝晶石",
+    "family": "铝硅酸盐多形族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-2303.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "拉长石_钙长石",
+    "family": "斜长石族",
+    "mindat_memberOf": "Plagioclase Group > Feldspar Group",
+    "mindat_url": "https://www.mindat.org/min-246.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "日光石_钠长石",
+    "family": "斜长石族",
+    "mindat_memberOf": "Plagioclase Group > Feldspar Group",
+    "mindat_url": "https://www.mindat.org/min-96.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "蔷薇辉石",
+    "family": "蔷薇辉石族",
+    "mindat_memberOf": "Rhodonite Group",
+    "mindat_url": "https://www.mindat.org/min-3407.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "绿松石",
+    "family": "绿松石族",
+    "mindat_memberOf": "Turquoise Group",
+    "mindat_url": "https://www.mindat.org/min-4060.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "斧石_铁斧石",
+    "family": "斧石族",
+    "mindat_memberOf": "Axinite Group",
+    "mindat_url": "https://www.mindat.org/min-1459.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "铁闪锌矿_闪锌矿型",
+    "family": "闪锌矿族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-6294.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "辉钼矿",
+    "family": "辉钼矿族",
+    "mindat_memberOf": "Molybdenite Group",
+    "mindat_url": "https://www.mindat.org/min-2746.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  },
+  {
+    "label": "葡萄石",
+    "family": "葡萄石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-3277.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "阿勒泰陨铁_αFe",
+    "family": "铁陨石类",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/search.php?search=Aletai%20iron%20meteorite",
+    "direct_member_of": false,
+    "audit_status": "non_species"
+  },
+  {
+    "label": "海蓝宝石",
+    "family": "绿柱石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-289.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "祖母绿",
+    "family": "绿柱石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-1375.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "摩根石",
+    "family": "绿柱石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-2783.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "红色绿柱石",
+    "family": "绿柱石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-690.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "紫水晶",
+    "family": "二氧化硅族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-198.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "烟晶",
+    "family": "二氧化硅族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-3689.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "蔷薇石英",
+    "family": "二氧化硅族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-3456.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "月光石",
+    "family": "长石族",
+    "mindat_memberOf": "",
+    "mindat_url": "https://www.mindat.org/min-2774.html",
+    "direct_member_of": false,
+    "audit_status": "checked"
+  },
+  {
+    "label": "石榴石",
+    "family": "石榴石超族",
+    "mindat_memberOf": "Garnet Supergroup",
+    "mindat_url": "https://www.mindat.org/min-10272.html",
+    "direct_member_of": true,
+    "audit_status": "checked"
+  }
+]
