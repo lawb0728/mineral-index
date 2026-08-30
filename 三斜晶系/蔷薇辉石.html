@@ -1,0 +1,517 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>蔷薇辉石｜矿物学习卡</title><style>
+:root{--ink:#22313b;--muted:#6b7c86;--line:#d7e1e5;--accent:#0c6b6f;--soft:#f1f7f6}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fa;color:var(--ink);font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;line-height:1.78}
+.page{max-width:980px;margin:38px auto;padding:0 24px}.hero{background:#fff;color:var(--ink);border:1px solid var(--line);border-left:9px solid var(--accent);border-radius:4px;padding:24px 28px}
+.hero h1{margin:0 0 2px;font-size:32px;letter-spacing:.04em;color:#143f47}.hero .en{font-size:17px;color:var(--muted)}
+section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e3e5}h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-bottom:1px solid var(--line);letter-spacing:.04em}
+.summary{font-size:15px;background:#fff;border:1px solid var(--line);border-left:4px solid #71aeb0;border-radius:4px;padding:17px 20px;margin:0}.detail-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}.detail-table th,.detail-table td{border-bottom:1px solid var(--line);padding:10px 13px;vertical-align:middle}.detail-table tr:last-child th,.detail-table tr:last-child td{border-bottom:0}.detail-table th{width:15%;background:#f4f8f8;color:#365a61;text-align:left;font-weight:600}.detail-table td p{margin:.2em 0}.detail-table.two-col th{width:15%}.detail-table.two-col td{width:35%}.detail-table.two-col td[colspan="3"]{width:auto}.detail-table .empty-cell{background:#fff}.muted{color:var(--muted);margin:4px 0}
+.back{display:inline-block;margin-bottom:16px;color:#0c6b6f;text-decoration:none;border-bottom:1px solid #abd0d0}.back:hover{text-decoration:none;color:#084e51}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:22px 0;display:flex;gap:12px;align-items:center}.toolbar input{flex:1;padding:10px 12px;border:1px solid #c4d3d8;border-radius:4px;font-size:15px}.count{color:var(--muted);font-size:14px;white-space:nowrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-top:4px solid #79aeb0;border-radius:4px;padding:17px 18px}.card h3{margin:0 0 2px;font-size:18px;color:#155e75}.card .en{font-size:13px;color:var(--muted);margin-bottom:8px}.card p{margin:4px 0;font-size:13px}.card a{display:inline-block;margin-top:9px;color:#0c6b6f;text-decoration:none;font-weight:600}.card a:hover{text-decoration:underline}
+.structure-placeholder{margin:0;padding:22px 18px;border:1px dashed #8db5b8;background:#f7fbfb;color:#5d737b;text-align:center;border-radius:4px}.param{display:inline-block;margin-right:8px;white-space:nowrap}.param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}.detail-table td{line-height:1.75}.source p{margin:7px 0}
+@media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero,section{box-shadow:none}.toolbar,.back{display:none}.structure-placeholder{break-inside:avoid}}
+
+.structure-viewer{position:relative;width:100%;height:600px;min-height:520px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(34,49,59,.06)}
+.structure-viewer canvas{display:block;width:100%;height:100%;min-height:520px}
+.structure-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px;padding:8px 10px;background:#fff;border:1px solid var(--line);border-radius:4px;color:#365a61;font-size:14px}
+.axis-button{width:34px;height:32px;padding:0;border:1px solid currentColor;border-radius:4px;background:#fff;font:600 16px/1 "Cambria Math","Times New Roman",serif;cursor:pointer}
+.axis-button[data-axis="a"]{color:#d62828}.axis-button[data-axis="b"]{color:#16883e}.axis-button[data-axis="c"]{color:#175dcc}
+.axis-button:hover,.axis-button:focus-visible{outline:none;filter:brightness(.94)}.axis-button[aria-pressed="true"]{color:#fff}
+.axis-button[data-axis="a"][aria-pressed="true"]{background:#d62828}.axis-button[data-axis="b"][aria-pressed="true"]{background:#16883e}.axis-button[data-axis="c"][aria-pressed="true"]{background:#175dcc}
+
+.detail-table.two-col.has-half-row{border-right:0;border-bottom:0;border-radius:4px 4px 0 0}.detail-table.two-col.has-half-row tr:not(.half-row)>td:last-child{border-right:1px solid var(--line)}.detail-table.two-col.has-half-row tr.half-row{background:#f7f9fa}.detail-table.two-col.has-half-row tr.half-row>th{width:15%;min-width:15%;max-width:15%;vertical-align:middle;border-bottom:1px solid var(--line)}.detail-table.two-col.has-half-row tr.half-row>td{width:35%;min-width:35%;max-width:35%;vertical-align:middle;background:#fff;border-bottom:1px solid var(--line)}.detail-table.two-col.has-half-row tr.half-row>.empty-cell{background:#f7f9fa;border-bottom:0;border-right:0}</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>蔷薇辉石</h1><div class="en">Rhodonite</div></header><section><h2>简介</h2><p class="summary">蔷薇辉石的玫瑰红底色与黑色锰氧化物纹理相互映衬，常被加工成具有天然图案的装饰石。它形成于富锰环境，能帮助说明锰在变质和热液过程中的重新分配。蔷薇辉石多呈粉红至玫瑰红色，黑色氧化锰脉纹常穿插在块状集合体中，形成鲜明的图案对比；它是含锰链状硅酸盐，既可作为锰矿物的伴生组分，也常用于雕刻和装饰。玫红色与黑色氧化锰脉纹构成天然图案，切磨后常用于展示其鲜明的色彩对比。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>蔷薇辉石</td></tr><tr><th>英文名</th><td>Rhodonite</td></tr><tr><th>矿物名称</th><td>蔷薇辉石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>CaMn<sub>3</sub>Mn[Si<sub>5</sub>O<sub>15</sub>]</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>三斜晶系</td></tr><tr><th>晶类</th><td>平行双面晶类</td></tr><tr><th>空间群</th><td>C<sub>i</sub><sup>1</sup>-P<span style=′text-decoration: overline′>1</span></td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 9.758 Å</span>；<span class="param"><b>b</b> = 10.499 Å</span>；<span class="param"><b>c</b> = 12.205 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 108.58°</span>；<span class="param"><b>β</b> = 102.92°</span>；<span class="param"><b>γ</b> = 82.52°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
+  <div class="structure-controls" aria-label="晶体结构轴向视角">
+    <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
+    <button type="button" class="axis-button" data-axis="b" aria-label="沿 b 轴观察" aria-pressed="false">b</button>
+    <button type="button" class="axis-button" data-axis="c" aria-label="沿 c 轴观察" aria-pressed="false">c</button>
+  </div>
+  <div id="crystvis-35" class="structure-viewer" aria-label="蔷薇辉石｜CrystVis-js三维晶体结构（左键或单指自由旋转，滚轮或双指缩放）">
+  <script type="text/plain" id="crystvis-35-source">#------------------------------------------------------------------------------
+#$Date: 2023-05-23 11:35:25 +0300 (Tue, 23 May 2023) $
+#$Revision: 283960 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/9/00/36/9003676.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/. The original data for this entry
+# were provided the American Mineralogist Crystal Structure Database,
+# http://rruff.geo.arizona.edu/AMS/amcsd.php
+#
+# The file may be used within the scientific community so long as
+# proper attribution is given to the journal article from which the
+# data were obtained.
+#
+data_9003676
+loop_
+_publ_author_name
+'Nelson, W. R.'
+'Griffen, D. T.'
+_publ_section_title
+;
+ Crystal chemistry of Zn-rich rhodonite ("fowlerite")
+ Sample: 15-4018
+ Note: see samples 15-4029 and 15-4024 for plausible typical "fowlerite"
+ and rhodonite cation distributions
+;
+_journal_name_full               'American Mineralogist'
+_journal_page_first              969
+_journal_page_last               983
+_journal_paper_doi               10.2138/am.2005.1694
+_journal_volume                  90
+_journal_year                    2005
+_chemical_formula_sum            'Mn5 O15 Si5'
+_chemical_name_mineral           Rhodonite
+_space_group_IT_number           2
+_symmetry_space_group_name_Hall  '-P 1 (1/2*x+1/2*y,1/2*x-1/2*y,-z)'
+_symmetry_space_group_name_H-M   'C -1'
+_cell_angle_alpha                108.697
+_cell_angle_beta                 103.335
+_cell_angle_gamma                82.191
+_cell_formula_units_Z            4
+_cell_length_a                   9.8381
+_cell_length_b                   10.5361
+_cell_length_c                   12.2381
+_cell_volume                     1166.558
+_database_code_amcsd             0003774
+_exptl_crystal_density_diffrn    3.730
+_cod_original_formula_sum        'Mn5 Si5 O15'
+_cod_database_code               9003676
+loop_
+_space_group_symop_operation_xyz
+x,y,z
+1/2+x,1/2+y,z
+-x,-y,-z
+1/2-x,1/2-y,-z
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Mn1 0.00710 0.00610 0.00790 -0.00090 0.00170 0.00240
+Mn2 0.00720 0.00730 0.00640 -0.00130 0.00120 0.00230
+Mn3 0.00780 0.00670 0.00630 -0.00150 0.00180 0.00160
+Mn4 0.01450 0.00710 0.00550 -0.00380 -0.00210 0.00180
+Mn5 0.00930 0.01450 0.01700 -0.00150 0.00470 0.00910
+Si1 0.00450 0.00520 0.00480 -0.00220 0.00000 0.00070
+Si2 0.00460 0.00570 0.00410 -0.00180 -0.00010 0.00160
+Si3 0.00530 0.00600 0.00370 -0.00100 -0.00030 0.00080
+Si4 0.00510 0.00610 0.00380 -0.00120 -0.00010 0.00160
+Si5 0.00520 0.00610 0.00480 -0.00140 0.00010 0.00190
+OA1 0.00640 0.00780 0.00680 -0.00250 -0.00040 0.00200
+OA2 0.00580 0.00850 0.00830 -0.00010 0.00150 0.00230
+OA3 0.00350 0.00890 0.00920 -0.00190 -0.00040 0.00270
+OA4 0.00490 0.01110 0.00990 0.00050 0.00200 0.00570
+OA5 0.00570 0.00780 0.00880 0.00010 0.00000 0.00240
+OA6 0.00660 0.00510 0.01070 0.00130 0.00220 0.00200
+OB1 0.00930 0.00760 0.00960 -0.00470 -0.00060 0.00230
+OB2 0.00940 0.00680 0.00770 -0.00450 0.00040 0.00160
+OB3 0.01130 0.01050 0.01120 0.00270 0.00010 -0.00080
+OB4 0.01190 0.00890 0.00840 -0.00450 0.00020 -0.00110
+OC1 0.01010 0.00670 0.00360 -0.00170 0.00060 0.00000
+OC2 0.00870 0.01650 0.01330 -0.00480 -0.00040 0.01100
+OC3 0.01010 0.01250 0.00380 -0.00230 0.00070 0.00330
+OC4 0.01010 0.00890 0.00650 -0.00040 0.00260 0.00440
+OC5 0.00740 0.00800 0.00490 -0.00020 0.00010 -0.00100
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_type_symbol
+_atom_site_attached_hydrogens
+Mn1 0.00006 0.03038 0.14794 0.00690 Mn 0
+Mn2 0.00148 0.12666 0.44492 0.00690 Mn 0
+Mn3 0.01651 0.20458 0.72987 0.00680 Mn 0
+Mn4 0.06046 0.26422 0.02370 0.00940 Mn 0
+Mn5 0.99571 0.35515 0.30519 0.01210 Mn 0
+Si1 0.20460 0.45070 0.91100 0.00500 Si 0
+Si2 0.21230 0.36690 0.65390 0.00480 Si 0
+Si3 0.21740 0.58030 0.52980 0.00530 Si 0
+Si4 0.21480 0.50680 0.26130 0.00510 Si 0
+Si5 0.20520 0.70100 0.12490 0.00540 Si 0
+OA1 0.12810 0.07060 0.04020 0.00710 O 0
+OA2 0.11920 0.15770 0.32240 0.00770 O 0
+OA3 0.11380 0.92210 0.43620 0.00740 O 0
+OA4 0.11830 0.01310 0.73160 0.00800 O 0
+OA5 0.13000 0.79070 0.85340 0.00780 O 0
+OA6 0.09840 0.83280 0.13080 0.00770 O 0
+OB1 0.12860 0.32250 0.90190 0.00890 O 0
+OB2 0.12470 0.23690 0.61130 0.00790 O 0
+OB3 0.12950 0.71170 0.58940 0.01270 O 0
+OB4 0.12620 0.38130 0.18380 0.01060 O 0
+OC1 0.16950 0.46990 0.77760 0.00720 O 0
+OC2 0.15960 0.45890 0.56340 0.01130 O 0
+OC3 0.16640 0.53840 0.38690 0.00860 O 0
+OC4 0.15850 0.64220 0.22010 0.00780 O 0
+OC5 0.14650 0.59300 0.99560 0.00770 O 0
+loop_
+_cod_changelog_entry_id
+_cod_changelog_entry_author
+_cod_changelog_entry_date
+_cod_changelog_entry_text
+1
+;cod-tools version 3.8.0
+Id: cif_guess_AMCSD_atom_types 9581 2023-05-17 12:35:41Z saulius
+;
+2023-05-23T09:17:54+03:00
+;Derived atom types and hydrogen counts
+from atom names that follow the AMCSD naming convention
+(Wat == water, O-H == hydroxyl).
+;
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 AMCSD 0003774
+  </script>
+  <script src="../assets/crystvis/crystvis-js.iife.min.js"></script>
+  <script>
+    (() => {
+      const source = document.getElementById("crystvis-35-source").textContent;
+      const viewerElement = document.getElementById("crystvis-35");
+      const supercell = [2, 2, 2];
+      const visualizer = new CrystVisModule.CrystVis("#crystvis-35", 0, 0);
+      const loaded = visualizer.loadModels(source, "cif", "model-crystvis-35", {
+        supercell,
+        molecularCrystal: false,
+        vdwScaling: 1.0
+      });
+      const modelName = Object.keys(loaded).find((name) => loaded[name] === 0);
+      if (!modelName) {
+        viewerElement.textContent = "晶体结构加载失败";
+        return;
+      }
+
+      const crystalModel = visualizer._models[modelName];
+      const controls = visualizer._renderer._oc;
+      controls.enableRotate = false;
+      controls.minPolarAngle = 0;
+      controls.maxPolarAngle = Math.PI;
+      controls.minAzimuthAngle = -Infinity;
+      controls.maxAzimuthAngle = Infinity;
+      controls.rotateSpeed = 1.0;
+
+      const modelGroup = visualizer._renderer._groups.model;
+      const primitiveGroup = visualizer._renderer._groups.primitives;
+      const rotatingGroups = [modelGroup, primitiveGroup];
+      const canvas = visualizer._renderer._r.domElement;
+      const activePointers = new Map();
+      const AXIS_REFERENCE_LENGTH = 3.5595 / 3;
+      const COVALENT_RADII = Object.freeze({
+        H:0.31, Be:0.96, B:1.11, C:0.76, N:0.71, O:0.66, F:0.57, Na:1.66,
+        Mg:1.41, Al:1.21, Si:1.11, P:1.07, S:1.05, Cl:1.02, K:2.03, Ca:1.76,
+        Ti:1.60, V:1.53, Cr:1.39, Mn:1.39, Fe:1.32, Co:1.26, Ni:1.24, Cu:1.32,
+        Zn:1.22, Ga:1.22, Ge:1.20, As:1.19, Se:1.20, Sr:1.95, Zr:1.75,
+        Nb:1.64, Mo:1.54, Ag:1.45, Cd:1.44, Sn:1.39, Ba:2.15, W:1.62,
+        Hg:1.32, Pb:1.46
+      });
+      const METALS = new Set([
+        "Li","Be","Na","Mg","Al","K","Ca","Sc","Ti","V",
+        "Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Rb","Sr",
+        "Y","Zr","Nb","Mo","Ag","Cd","In","Sn","Cs","Ba",
+        "W","Hg","Pb"
+      ]);
+      const BOND_PARTNERS = new Set(["O", "F", "Cl", "S", "Se", "N"]);
+      let structureCenter = [0, 0, 0];
+      let orbitPointerId = null;
+      let orbitPoint = null;
+
+      function element(symbol) {
+        const match = String(symbol || "").match(/^[A-Z][a-z]?/);
+        return match ? match[0] : String(symbol || "");
+      }
+
+      function pairIsBondable(a, b, metalOnly) {
+        if (a === b) return a === "C" || a === "S" || a === "Se" || metalOnly;
+        if (a === "H" || b === "H") return ["O", "F", "N", "S"].includes(a === "H" ? b : a);
+        if (BOND_PARTNERS.has(a) || BOND_PARTNERS.has(b)) return true;
+        return false;
+      }
+
+      function rebuildActualBonds() {
+        const symbols = crystalModel.symbols.map(element);
+        const composition = [...new Set(symbols)];
+        const metalOnly = composition.length > 0 && composition.every((symbol) => METALS.has(symbol));
+        const positions = crystalModel.positions;
+        const cell = crystalModel.cell;
+        const atomCount = crystalModel.length;
+        const groups = new Map();
+        const offsets = [-1, 0, 1];
+
+        for (let i = 0; i < atomCount; i++) {
+          for (let j = i; j < atomCount; j++) {
+            const a = symbols[i];
+            const b = symbols[j];
+            if (!pairIsBondable(a, b, metalOnly)) continue;
+            const pairKey = [a, b].sort().join("-");
+            if (!groups.has(pairKey)) groups.set(pairKey, []);
+            for (const ox of offsets) for (const oy of offsets) for (const oz of offsets) {
+              if (i === j && ox === 0 && oy === 0 && oz === 0) continue;
+              if (i === j && (ox < 0 || (ox === 0 && oy < 0) || (ox === 0 && oy === 0 && oz < 0))) continue;
+              const dx = positions[j][0] - positions[i][0] + ox * cell[0][0] + oy * cell[1][0] + oz * cell[2][0];
+              const dy = positions[j][1] - positions[i][1] + ox * cell[0][1] + oy * cell[1][1] + oz * cell[2][1];
+              const dz = positions[j][2] - positions[i][2] + ox * cell[0][2] + oy * cell[1][2] + oz * cell[2][2];
+              const distance = Math.hypot(dx, dy, dz);
+              if (distance > 0.55 && distance <= 4.2) {
+                groups.get(pairKey).push({i, j, offset:[ox, oy, oz], distance, a, b});
+              }
+            }
+          }
+        }
+
+        const bondMatrix = Array.from({length:atomCount}, () =>
+          Array.from({length:atomCount}, () => []));
+        const selected = [];
+        groups.forEach((entries) => {
+          if (!entries.length) return;
+          entries.sort((left, right) => left.distance - right.distance);
+          const nearest = entries[0].distance;
+          if (nearest > 3.45) return;
+          const distances = [];
+          entries.forEach((entry) => {
+            if (!distances.length || entry.distance - distances[distances.length - 1] > 0.015) {
+              distances.push(entry.distance);
+            }
+          });
+          let threshold = nearest * 1.18;
+          for (let index = 1; index < distances.length; index++) {
+            const previous = distances[index - 1];
+            const gap = distances[index] - previous;
+            if (gap > Math.max(0.22, previous * 0.11)) break;
+            threshold = distances[index] * 1.04;
+          }
+          const radiusA = COVALENT_RADII[entries[0].a] || 1.35;
+          const radiusB = COVALENT_RADII[entries[0].b] || 1.35;
+          const chemistryLimit = (radiusA + radiusB) * (metalOnly ? 1.16 : 1.2);
+          threshold = Math.min(threshold, chemistryLimit, nearest * 1.24);
+          entries.forEach((entry) => {
+            if (entry.distance <= threshold + 1e-6) selected.push(entry);
+          });
+        });
+
+        selected.forEach(({i, j, offset}) => {
+          bondMatrix[i][j].push(offset);
+          bondMatrix[j][i].push([-offset[0], -offset[1], -offset[2]]);
+        });
+        crystalModel._atom_images.forEach((atom) => {
+          atom._bondsFrom.length = 0;
+          atom._bondsTo.length = 0;
+        });
+        crystalModel._bondmat = bondMatrix;
+        crystalModel._bond_images = crystalModel._bondImages();
+      }
+
+      function configureAxes() {
+        const axes = visualizer.model.axes;
+        const box = visualizer.model.box;
+        if (box) box.visible = false;
+        if (!axes) return;
+        axes.rotation.set(0, 0, 0);
+        axes.scale.set(1, 1, 1);
+        axes.renderOrder = 1000;
+        axes.frustumCulled = false;
+        axes.linewidth = 2.5;
+        axes.children.forEach((arrow, index) => {
+          const cellLength = Math.hypot(...visualizer.model.cell[index]);
+          const lengthScale = cellLength > 0 ? AXIS_REFERENCE_LENGTH / (cellLength / 3) : 1;
+          arrow.name = ["a", "b", "c"][index];
+          arrow.scale.set(lengthScale, lengthScale, lengthScale);
+          arrow.renderOrder = 1000;
+          arrow.line.material.linewidth = 2.5;
+          arrow.line.material.depthTest = false;
+          arrow.line.material.depthWrite = false;
+          arrow.line.material.needsUpdate = true;
+          arrow.cone.scale.set(1.25, 1.25, 1.25);
+          arrow.cone.material.depthTest = false;
+          arrow.cone.material.depthWrite = false;
+          arrow.cone.material.needsUpdate = true;
+          arrow.cone.name = ["a", "b", "c"][index] + "-arrow";
+        });
+      }
+
+      function updateAxisCorner() {
+        const axes = visualizer.model.axes;
+        const camera = visualizer._renderer._c;
+        if (!axes || !camera || !controls.target) return;
+        const target = controls.target.clone();
+        const right = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const up = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        const towardViewer = camera.position.clone().sub(target).normalize();
+        const worldWidth = (camera.right - camera.left) / camera.zoom;
+        const worldHeight = (camera.top - camera.bottom) / camera.zoom;
+        const canvasWidth = canvas.clientWidth || canvas.width || 1;
+        const canvasHeight = canvas.clientHeight || canvas.height || 1;
+        const marginX = worldWidth * 96 / canvasWidth;
+        const marginY = worldHeight * 92 / canvasHeight;
+        const corner = target.clone()
+          .addScaledVector(right, -worldWidth / 2 + marginX)
+          .addScaledVector(up, -worldHeight / 2 + marginY)
+          .addScaledVector(towardViewer, 5);
+        const parentPosition = primitiveGroup.position;
+        axes.position.set(
+          corner.x - parentPosition.x,
+          corner.y - parentPosition.y,
+          corner.z - parentPosition.z
+        );
+        const fixedScale = 2.6 / Math.max(camera.zoom, 0.001);
+        axes.scale.set(fixedScale, fixedScale, fixedScale);
+        axes.updateMatrixWorld(true);
+      }
+
+      function orbitCamera(deltaX, deltaY) {
+        const camera = visualizer._renderer._c;
+        const target = controls.target;
+        const offset = camera.position.clone().sub(target);
+        const orbitUp = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        const orbitRight = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const yaw = -deltaX * 0.012;
+        const pitch = -deltaY * 0.012;
+        offset.applyAxisAngle(orbitUp, yaw);
+        offset.applyAxisAngle(orbitRight, pitch);
+        camera.up.applyAxisAngle(orbitUp, yaw);
+        camera.up.applyAxisAngle(orbitRight, pitch).normalize();
+        camera.position.copy(target).add(offset);
+        camera.lookAt(target);
+        controls.update();
+        updateAxisCorner();
+      }
+
+      canvas.style.touchAction = "none";
+      canvas.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+        event.preventDefault();
+        activePointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
+        if (activePointers.size === 1) {
+          orbitPointerId = event.pointerId;
+          orbitPoint = {x:event.clientX, y:event.clientY};
+          canvas.setPointerCapture(event.pointerId);
+        }
+      }, {passive:false});
+      canvas.addEventListener("pointermove", (event) => {
+        if (!activePointers.has(event.pointerId)) return;
+        event.preventDefault();
+        activePointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
+        if (event.pointerId !== orbitPointerId || activePointers.size !== 1 || !orbitPoint) return;
+        orbitCamera(event.clientX - orbitPoint.x, event.clientY - orbitPoint.y);
+        orbitPoint = {x:event.clientX, y:event.clientY};
+      }, {passive:false});
+      function endOrbitPointer(event) {
+        activePointers.delete(event.pointerId);
+        if (event.pointerId === orbitPointerId) {
+          orbitPointerId = null;
+          orbitPoint = null;
+        }
+      }
+      canvas.addEventListener("pointerup", endOrbitPointer);
+      canvas.addEventListener("pointercancel", endOrbitPointer);
+
+      function fitStructureToView() {
+        const camera = visualizer._renderer._c;
+        const right = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const up = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        let extentX = 0;
+        let extentY = 0;
+        visualizer.model.atoms.forEach((atom) => {
+          const dx = atom.xyz[0] - structureCenter[0];
+          const dy = atom.xyz[1] - structureCenter[1];
+          const dz = atom.xyz[2] - structureCenter[2];
+          extentX = Math.max(extentX, Math.abs(dx * right.x + dy * right.y + dz * right.z));
+          extentY = Math.max(extentY, Math.abs(dx * up.x + dy * up.y + dz * up.z));
+        });
+        extentX += 1.35;
+        extentY += 1.35;
+        const zoomX = (camera.right - camera.left) * 0.82 / Math.max(2 * extentX, 0.001);
+        const zoomY = (camera.top - camera.bottom) * 0.82 / Math.max(2 * extentY, 0.001);
+        camera.zoom = Math.max(0.28, Math.min(1.95, zoomX, zoomY));
+        camera.updateProjectionMatrix();
+        viewerElement.dataset.initialZoom = camera.zoom.toFixed(4);
+      }
+
+      function setAxisView(axis) {
+        const camera = visualizer._renderer._c;
+        const target = structureCenter;
+        const normalized = visualizer.model.cell.map((vector) => {
+          const length = Math.hypot(...vector);
+          return vector.map((value) => value / length);
+        });
+        const views = {
+          a:{direction:normalized[0], up:normalized[2]},
+          b:{direction:normalized[1], up:normalized[2]},
+          c:{direction:normalized[2], up:normalized[1]}
+        };
+        const view = views[axis] || views.a;
+        camera.position.set(
+          target[0] + view.direction[0] * 100,
+          target[1] + view.direction[1] * 100,
+          target[2] + view.direction[2] * 100
+        );
+        camera.up.set(...view.up);
+        camera.lookAt(...target);
+        controls.target.set(...target);
+        controls.update();
+        fitStructureToView();
+        controls.update();
+        updateAxisCorner();
+        document.querySelectorAll(".axis-button").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.axis === axis));
+        });
+      }
+
+      function centerModelTransform() {
+        const atoms = visualizer.model.atoms;
+        const minimum = [Infinity, Infinity, Infinity];
+        const maximum = [-Infinity, -Infinity, -Infinity];
+        atoms.forEach((atom) => atom.xyz.forEach((coordinate, axis) => {
+          minimum[axis] = Math.min(minimum[axis], coordinate);
+          maximum[axis] = Math.max(maximum[axis], coordinate);
+        }));
+        const center = minimum.map((value, axis) => (value + maximum[axis]) / 2);
+        structureCenter = center;
+        rotatingGroups.forEach((group) => {
+          group.children.forEach((child) => {
+            child.position.x -= center[0];
+            child.position.y -= center[1];
+            child.position.z -= center[2];
+          });
+          group.position.set(center[0], center[1], center[2]);
+          group.updateMatrixWorld(true);
+        });
+        visualizer.centerCamera(center);
+      }
+
+      function applyDisplaySettings() {
+        visualizer.displayed = visualizer.model.find({all:[]});
+        visualizer.displayed._bonds.forEach((bond) => { bond.radius = 0.1; });
+        centerModelTransform();
+        configureAxes();
+        visualizer._renderer._r.setClearColor(0xffffff, 1);
+        visualizer._renderer.setAmbientLight(0.45);
+        visualizer._renderer.setDirectionalLight(0.75, 0.5, 1, -1);
+        viewerElement.dataset.supercell = supercell.join("×");
+        viewerElement.dataset.atomCount = String(visualizer.model.atoms.length);
+        viewerElement.dataset.bondCount = String(visualizer.displayed._bonds.length);
+      }
+
+      rebuildActualBonds();
+      visualizer.displayModel(modelName);
+      applyDisplaySettings();
+      setAxisView("a");
+      const renderer = visualizer._renderer._r;
+      renderer.autoClear = true;
+      renderer.autoClearColor = true;
+      renderer.autoClearDepth = true;
+      renderer.autoClearStencil = true;
+      controls.addEventListener("change", updateAxisCorner);
+      canvas.addEventListener("wheel", updateAxisCorner, {passive:true});
+      window.addEventListener("resize", updateAxisCorner, {passive:true});
+      document.querySelectorAll(".axis-button").forEach((button) => {
+        button.addEventListener("click", () => setAxisView(button.dataset.axis));
+      });
+      updateAxisCorner();
+    })();
+  </script>
+</div>
+</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>多呈浅玫瑰红色至褐红色，有时为灰色或黄色，也有完全无色透明者</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，Np=黄红色，Nm=粉红色，Ng=浅黄红色</td></tr><tr><th>折射率</th><td>Np=1.711-1.734；Nm=1.716-1.739；Ng=1.724-1.748</td><th>摩氏硬度</th><td>5½-6½</td></tr><tr class="half-row"><th>相对密度</th><td>3.57-3.76</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蔷薇辉石通常由含锰岩石经区域变质或接触交代变质形成，也可在伟晶岩和低温热液矿床中出现；表生氧化会使其转变为软锰矿、菱锰矿等含锰矿物，水化则可形成水蔷薇辉石或含锰蛇纹石。</td></tr><tr><th>伴生矿物</th><td>常与方解石、硅锌矿、锌铁尖晶石、粒硅锰石、锰橄榄石、尖晶石、铁闪石和磁铁矿相伴。</td></tr><tr><th>应用</th><td>致密块状蔷薇辉石可作雕刻和装饰石材，氧化后锰质富集时还可作为锰矿石利用。</td></tr></tbody></table></section></main></body></html>
