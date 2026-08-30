@@ -1,0 +1,482 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>硫磺｜矿物学习卡</title><style>
+:root{--ink:#22313b;--muted:#6b7c86;--line:#d7e1e5;--accent:#0c6b6f;--soft:#f1f7f6}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fa;color:var(--ink);font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;line-height:1.78}
+.page{max-width:980px;margin:38px auto;padding:0 24px}.hero{background:#fff;color:var(--ink);border:1px solid var(--line);border-left:9px solid var(--accent);border-radius:4px;padding:24px 28px}
+.hero h1{margin:0 0 2px;font-size:32px;letter-spacing:.04em;color:#143f47}.hero .en{font-size:17px;color:var(--muted)}
+section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e3e5}h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-bottom:1px solid var(--line);letter-spacing:.04em}
+.summary{font-size:15px;background:#fff;border:1px solid var(--line);border-left:4px solid #71aeb0;border-radius:4px;padding:17px 20px;margin:0}.detail-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}.detail-table th,.detail-table td{border-bottom:1px solid var(--line);padding:10px 13px;vertical-align:middle}.detail-table tr:last-child th,.detail-table tr:last-child td{border-bottom:0}.detail-table th{width:15%;background:#f4f8f8;color:#365a61;text-align:left;font-weight:600}.detail-table td p{margin:.2em 0}.detail-table.two-col th{width:15%}.detail-table.two-col td{width:35%}.detail-table.two-col td[colspan="3"]{width:auto}.detail-table .empty-cell{background:#fff}.muted{color:var(--muted);margin:4px 0}
+.back{display:inline-block;margin-bottom:16px;color:#0c6b6f;text-decoration:none;border-bottom:1px solid #abd0d0}.back:hover{text-decoration:none;color:#084e51}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:22px 0;display:flex;gap:12px;align-items:center}.toolbar input{flex:1;padding:10px 12px;border:1px solid #c4d3d8;border-radius:4px;font-size:15px}.count{color:var(--muted);font-size:14px;white-space:nowrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-top:4px solid #79aeb0;border-radius:4px;padding:17px 18px}.card h3{margin:0 0 2px;font-size:18px;color:#155e75}.card .en{font-size:13px;color:var(--muted);margin-bottom:8px}.card p{margin:4px 0;font-size:13px}.card a{display:inline-block;margin-top:9px;color:#0c6b6f;text-decoration:none;font-weight:600}.card a:hover{text-decoration:underline}
+.structure-placeholder{margin:0;padding:22px 18px;border:1px dashed #8db5b8;background:#f7fbfb;color:#5d737b;text-align:center;border-radius:4px}.param{display:inline-block;margin-right:8px;white-space:nowrap}.param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}.detail-table td{line-height:1.75}.source p{margin:7px 0}
+@media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero,section{box-shadow:none}.toolbar,.back{display:none}.structure-placeholder{break-inside:avoid}}
+
+.structure-viewer{position:relative;width:100%;height:600px;min-height:520px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(34,49,59,.06)}
+.structure-viewer canvas{display:block;width:100%;height:100%;min-height:520px}
+.structure-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px;padding:8px 10px;background:#fff;border:1px solid var(--line);border-radius:4px;color:#365a61;font-size:14px}
+.axis-button{width:34px;height:32px;padding:0;border:1px solid currentColor;border-radius:4px;background:#fff;font:600 16px/1 "Cambria Math","Times New Roman",serif;cursor:pointer}
+.axis-button[data-axis="a"]{color:#d62828}.axis-button[data-axis="b"]{color:#16883e}.axis-button[data-axis="c"]{color:#175dcc}
+.axis-button:hover,.axis-button:focus-visible{outline:none;filter:brightness(.94)}.axis-button[aria-pressed="true"]{color:#fff}
+.axis-button[data-axis="a"][aria-pressed="true"]{background:#d62828}.axis-button[data-axis="b"][aria-pressed="true"]{background:#16883e}.axis-button[data-axis="c"][aria-pressed="true"]{background:#175dcc}
+
+</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>硫磺</h1><div class="en">Sulfur</div></header><section><h2>简介</h2><p class="summary">自然硫鲜亮的黄色和较低的熔点，使它在火山喷气孔附近形成极具辨识度的矿物景观。自然硫呈明亮的柠檬黄色，晶体中以S₈分子单元存在，斜方晶系是常温下稳定的晶型；它熔点较低并可燃，火山喷气孔和蒸发环境中常能见到，工业上是硫酸和多种化工产品的重要原料。明黄色晶体以 S8 环状分子为单元，低熔点和可燃性构成它最鲜明的物性组合。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>硫磺</td></tr><tr><th>英文名</th><td>Sulfur</td></tr><tr><th>矿物名称</th><td>自然硫</td></tr><tr><th>矿物分类</th><td>自然元素矿物</td></tr><tr><th>晶体化学式</th><td>S<sub>8</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>斜方晶系</td></tr><tr><th>晶类</th><td>斜方双锥晶类</td></tr><tr><th>空间群</th><td>Fddd</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 10.468 Å</span>；<span class="param"><b>b</b> = 12.870 Å</span>；<span class="param"><b>c</b> = 24.49 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
+  <div class="structure-controls" aria-label="晶体结构轴向视角">
+    <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
+    <button type="button" class="axis-button" data-axis="b" aria-label="沿 b 轴观察" aria-pressed="false">b</button>
+    <button type="button" class="axis-button" data-axis="c" aria-label="沿 c 轴观察" aria-pressed="false">c</button>
+  </div>
+  <div id="crystvis-31" class="structure-viewer" aria-label="硫磺｜CrystVis-js三维晶体结构（左键或单指自由旋转，滚轮或双指缩放）">
+  <script type="text/plain" id="crystvis-31-source">#------------------------------------------------------------------------------
+#$Date: 2025-08-18 15:29:48 +0300 (Mon, 18 Aug 2025) $
+#$Revision: 301772 $
+#$URL: file:///home/coder/svn-repositories/_RELOADED_COD/cod-reloaded/cif/1/01/11/1011160.cif $
+#------------------------------------------------------------------------------
+#
+# This file is available in the Crystallography Open Database (COD),
+# http://www.crystallography.net/
+#
+# All data on this site have been placed in the public domain by the
+# contributors.
+#
+data_1011160
+loop_
+_publ_author_name
+'Warren, B E'
+'Burwell, J T'
+_publ_section_title              'The structure of rhombic sulphur'
+_journal_coden_ASTM              JCPSA6
+_journal_name_full               'Journal of Chemical Physics'
+_journal_page_first              6
+_journal_page_last               8
+_journal_paper_doi               10.1063/1.1749557
+_journal_volume                  3
+_journal_year                    1935
+_chemical_compound_source        synthetic
+_chemical_formula_structural     S8
+_chemical_formula_sum            S8
+_chemical_name_common            Sulfur
+_chemical_name_mineral           Sulfur
+_chemical_name_systematic        'Octasulfur - $-alpha'
+_space_group_IT_number           70
+_symmetry_cell_setting           orthorhombic
+_symmetry_space_group_name_Hall  'F 2 2 -1d'
+_symmetry_space_group_name_H-M   'F d d d :1'
+_cell_angle_alpha                90
+_cell_angle_beta                 90
+_cell_angle_gamma                90
+_cell_formula_units_Z            16
+_cell_length_a                   10.48
+_cell_length_b                   12.92
+_cell_length_c                   24.54999
+_cell_volume                     3324.1
+_exptl_crystal_density_meas      2.04
+_cod_original_sg_symbol_H-M      'F d d d S'
+_cod_database_code               1011160
+loop_
+_symmetry_equiv_pos_as_xyz
+x,y,z
+-x,y,-z
+1/4-x,1/4-y,1/4-z
+1/4+x,1/4-y,1/4+z
+x,-y,-z
+-x,-y,z
+1/4-x,1/4+y,1/4+z
+1/4+x,1/4+y,1/4-z
+x,1/2+y,1/2+z
+1/2+x,y,1/2+z
+1/2+x,1/2+y,z
+-x,1/2+y,1/2-z
+1/2-x,y,1/2-z
+1/2-x,1/2+y,-z
+1/4-x,3/4-y,3/4-z
+3/4-x,1/4-y,3/4-z
+3/4-x,3/4-y,1/4-z
+1/4+x,3/4-y,3/4+z
+3/4+x,1/4-y,3/4+z
+3/4+x,3/4-y,1/4+z
+x,1/2-y,1/2-z
+1/2+x,-y,1/2-z
+1/2+x,1/2-y,-z
+-x,1/2-y,1/2+z
+1/2-x,-y,1/2+z
+1/2-x,1/2-y,z
+1/4-x,3/4+y,3/4+z
+3/4-x,1/4+y,3/4+z
+3/4-x,3/4+y,1/4+z
+1/4+x,3/4+y,3/4-z
+3/4+x,1/4+y,3/4-z
+3/4+x,3/4+y,1/4-z
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_attached_hydrogens
+_atom_site_calc_flag
+S1 S 32 h -0.017 0.083 0.072 1. 0 d
+S2 S 32 h -0.094 0.161 0.2 1. 0 d
+S3 S 32 h -0.167 0.105 0.125 1. 0 d
+S4 S 32 h -0.094 0.028 0.25 1. 0 d
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+S0 0.000
+loop_
+_cod_related_entry_id
+_cod_related_entry_database
+_cod_related_entry_code
+1 ChemSpider 59726
+2 AMCSD 0018039
+3 PubChem 66348
+  </script>
+  <script src="../assets/crystvis/crystvis-js.iife.min.js"></script>
+  <script>
+    (() => {
+      const source = document.getElementById("crystvis-31-source").textContent;
+      const viewerElement = document.getElementById("crystvis-31");
+      const supercell = [2, 2, 2];
+      const visualizer = new CrystVisModule.CrystVis("#crystvis-31", 0, 0);
+      const loaded = visualizer.loadModels(source, "cif", "model-crystvis-31", {
+        supercell,
+        molecularCrystal: false,
+        vdwScaling: 1.0
+      });
+      const modelName = Object.keys(loaded).find((name) => loaded[name] === 0);
+      if (!modelName) {
+        viewerElement.textContent = "晶体结构加载失败";
+        return;
+      }
+
+      const crystalModel = visualizer._models[modelName];
+      const controls = visualizer._renderer._oc;
+      controls.enableRotate = false;
+      controls.minPolarAngle = 0;
+      controls.maxPolarAngle = Math.PI;
+      controls.minAzimuthAngle = -Infinity;
+      controls.maxAzimuthAngle = Infinity;
+      controls.rotateSpeed = 1.0;
+
+      const modelGroup = visualizer._renderer._groups.model;
+      const primitiveGroup = visualizer._renderer._groups.primitives;
+      const rotatingGroups = [modelGroup, primitiveGroup];
+      const canvas = visualizer._renderer._r.domElement;
+      const activePointers = new Map();
+      const AXIS_REFERENCE_LENGTH = 3.5595 / 3;
+      const COVALENT_RADII = Object.freeze({
+        H:0.31, Be:0.96, B:1.11, C:0.76, N:0.71, O:0.66, F:0.57, Na:1.66,
+        Mg:1.41, Al:1.21, Si:1.11, P:1.07, S:1.05, Cl:1.02, K:2.03, Ca:1.76,
+        Ti:1.60, V:1.53, Cr:1.39, Mn:1.39, Fe:1.32, Co:1.26, Ni:1.24, Cu:1.32,
+        Zn:1.22, Ga:1.22, Ge:1.20, As:1.19, Se:1.20, Sr:1.95, Zr:1.75,
+        Nb:1.64, Mo:1.54, Ag:1.45, Cd:1.44, Sn:1.39, Ba:2.15, W:1.62,
+        Hg:1.32, Pb:1.46
+      });
+      const METALS = new Set([
+        "Li","Be","Na","Mg","Al","K","Ca","Sc","Ti","V",
+        "Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Rb","Sr",
+        "Y","Zr","Nb","Mo","Ag","Cd","In","Sn","Cs","Ba",
+        "W","Hg","Pb"
+      ]);
+      const BOND_PARTNERS = new Set(["O", "F", "Cl", "S", "Se", "N"]);
+      let structureCenter = [0, 0, 0];
+      let orbitPointerId = null;
+      let orbitPoint = null;
+
+      function element(symbol) {
+        const match = String(symbol || "").match(/^[A-Z][a-z]?/);
+        return match ? match[0] : String(symbol || "");
+      }
+
+      function pairIsBondable(a, b, metalOnly) {
+        if (a === b) return a === "C" || a === "S" || a === "Se" || metalOnly;
+        if (a === "H" || b === "H") return ["O", "F", "N", "S"].includes(a === "H" ? b : a);
+        if (BOND_PARTNERS.has(a) || BOND_PARTNERS.has(b)) return true;
+        return false;
+      }
+
+      function rebuildActualBonds() {
+        const symbols = crystalModel.symbols.map(element);
+        const composition = [...new Set(symbols)];
+        const metalOnly = composition.length > 0 && composition.every((symbol) => METALS.has(symbol));
+        const positions = crystalModel.positions;
+        const cell = crystalModel.cell;
+        const atomCount = crystalModel.length;
+        const groups = new Map();
+        const offsets = [-1, 0, 1];
+
+        for (let i = 0; i < atomCount; i++) {
+          for (let j = i; j < atomCount; j++) {
+            const a = symbols[i];
+            const b = symbols[j];
+            if (!pairIsBondable(a, b, metalOnly)) continue;
+            const pairKey = [a, b].sort().join("-");
+            if (!groups.has(pairKey)) groups.set(pairKey, []);
+            for (const ox of offsets) for (const oy of offsets) for (const oz of offsets) {
+              if (i === j && ox === 0 && oy === 0 && oz === 0) continue;
+              if (i === j && (ox < 0 || (ox === 0 && oy < 0) || (ox === 0 && oy === 0 && oz < 0))) continue;
+              const dx = positions[j][0] - positions[i][0] + ox * cell[0][0] + oy * cell[1][0] + oz * cell[2][0];
+              const dy = positions[j][1] - positions[i][1] + ox * cell[0][1] + oy * cell[1][1] + oz * cell[2][1];
+              const dz = positions[j][2] - positions[i][2] + ox * cell[0][2] + oy * cell[1][2] + oz * cell[2][2];
+              const distance = Math.hypot(dx, dy, dz);
+              if (distance > 0.55 && distance <= 4.2) {
+                groups.get(pairKey).push({i, j, offset:[ox, oy, oz], distance, a, b});
+              }
+            }
+          }
+        }
+
+        const bondMatrix = Array.from({length:atomCount}, () =>
+          Array.from({length:atomCount}, () => []));
+        const selected = [];
+        groups.forEach((entries) => {
+          if (!entries.length) return;
+          entries.sort((left, right) => left.distance - right.distance);
+          const nearest = entries[0].distance;
+          if (nearest > 3.45) return;
+          const distances = [];
+          entries.forEach((entry) => {
+            if (!distances.length || entry.distance - distances[distances.length - 1] > 0.015) {
+              distances.push(entry.distance);
+            }
+          });
+          let threshold = nearest * 1.18;
+          for (let index = 1; index < distances.length; index++) {
+            const previous = distances[index - 1];
+            const gap = distances[index] - previous;
+            if (gap > Math.max(0.22, previous * 0.11)) break;
+            threshold = distances[index] * 1.04;
+          }
+          const radiusA = COVALENT_RADII[entries[0].a] || 1.35;
+          const radiusB = COVALENT_RADII[entries[0].b] || 1.35;
+          const chemistryLimit = (radiusA + radiusB) * (metalOnly ? 1.16 : 1.2);
+          threshold = Math.min(threshold, chemistryLimit, nearest * 1.24);
+          entries.forEach((entry) => {
+            if (entry.distance <= threshold + 1e-6) selected.push(entry);
+          });
+        });
+
+        selected.forEach(({i, j, offset}) => {
+          bondMatrix[i][j].push(offset);
+          bondMatrix[j][i].push([-offset[0], -offset[1], -offset[2]]);
+        });
+        crystalModel._atom_images.forEach((atom) => {
+          atom._bondsFrom.length = 0;
+          atom._bondsTo.length = 0;
+        });
+        crystalModel._bondmat = bondMatrix;
+        crystalModel._bond_images = crystalModel._bondImages();
+      }
+
+      function configureAxes() {
+        const axes = visualizer.model.axes;
+        const box = visualizer.model.box;
+        if (box) box.visible = false;
+        if (!axes) return;
+        axes.rotation.set(0, 0, 0);
+        axes.scale.set(1, 1, 1);
+        axes.renderOrder = 1000;
+        axes.frustumCulled = false;
+        axes.linewidth = 2.5;
+        axes.children.forEach((arrow, index) => {
+          const cellLength = Math.hypot(...visualizer.model.cell[index]);
+          const lengthScale = cellLength > 0 ? AXIS_REFERENCE_LENGTH / (cellLength / 3) : 1;
+          arrow.name = ["a", "b", "c"][index];
+          arrow.scale.set(lengthScale, lengthScale, lengthScale);
+          arrow.renderOrder = 1000;
+          arrow.line.material.linewidth = 2.5;
+          arrow.line.material.depthTest = false;
+          arrow.line.material.depthWrite = false;
+          arrow.line.material.needsUpdate = true;
+          arrow.cone.scale.set(1.25, 1.25, 1.25);
+          arrow.cone.material.depthTest = false;
+          arrow.cone.material.depthWrite = false;
+          arrow.cone.material.needsUpdate = true;
+          arrow.cone.name = ["a", "b", "c"][index] + "-arrow";
+        });
+      }
+
+      function updateAxisCorner() {
+        const axes = visualizer.model.axes;
+        const camera = visualizer._renderer._c;
+        if (!axes || !camera || !controls.target) return;
+        const target = controls.target.clone();
+        const right = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const up = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        const towardViewer = camera.position.clone().sub(target).normalize();
+        const worldWidth = (camera.right - camera.left) / camera.zoom;
+        const worldHeight = (camera.top - camera.bottom) / camera.zoom;
+        const canvasWidth = canvas.clientWidth || canvas.width || 1;
+        const canvasHeight = canvas.clientHeight || canvas.height || 1;
+        const marginX = worldWidth * 96 / canvasWidth;
+        const marginY = worldHeight * 92 / canvasHeight;
+        const corner = target.clone()
+          .addScaledVector(right, -worldWidth / 2 + marginX)
+          .addScaledVector(up, -worldHeight / 2 + marginY)
+          .addScaledVector(towardViewer, 5);
+        const parentPosition = primitiveGroup.position;
+        axes.position.set(
+          corner.x - parentPosition.x,
+          corner.y - parentPosition.y,
+          corner.z - parentPosition.z
+        );
+        const fixedScale = 2.6 / Math.max(camera.zoom, 0.001);
+        axes.scale.set(fixedScale, fixedScale, fixedScale);
+        axes.updateMatrixWorld(true);
+      }
+
+      function orbitCamera(deltaX, deltaY) {
+        const camera = visualizer._renderer._c;
+        const target = controls.target;
+        const offset = camera.position.clone().sub(target);
+        const orbitUp = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        const orbitRight = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const yaw = -deltaX * 0.012;
+        const pitch = -deltaY * 0.012;
+        offset.applyAxisAngle(orbitUp, yaw);
+        offset.applyAxisAngle(orbitRight, pitch);
+        camera.up.applyAxisAngle(orbitUp, yaw);
+        camera.up.applyAxisAngle(orbitRight, pitch).normalize();
+        camera.position.copy(target).add(offset);
+        camera.lookAt(target);
+        controls.update();
+        updateAxisCorner();
+      }
+
+      canvas.style.touchAction = "none";
+      canvas.addEventListener("pointerdown", (event) => {
+        if (event.pointerType === "mouse" && event.button !== 0) return;
+        event.preventDefault();
+        activePointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
+        if (activePointers.size === 1) {
+          orbitPointerId = event.pointerId;
+          orbitPoint = {x:event.clientX, y:event.clientY};
+          canvas.setPointerCapture(event.pointerId);
+        }
+      }, {passive:false});
+      canvas.addEventListener("pointermove", (event) => {
+        if (!activePointers.has(event.pointerId)) return;
+        event.preventDefault();
+        activePointers.set(event.pointerId, {x:event.clientX, y:event.clientY});
+        if (event.pointerId !== orbitPointerId || activePointers.size !== 1 || !orbitPoint) return;
+        orbitCamera(event.clientX - orbitPoint.x, event.clientY - orbitPoint.y);
+        orbitPoint = {x:event.clientX, y:event.clientY};
+      }, {passive:false});
+      function endOrbitPointer(event) {
+        activePointers.delete(event.pointerId);
+        if (event.pointerId === orbitPointerId) {
+          orbitPointerId = null;
+          orbitPoint = null;
+        }
+      }
+      canvas.addEventListener("pointerup", endOrbitPointer);
+      canvas.addEventListener("pointercancel", endOrbitPointer);
+
+      function fitStructureToView() {
+        const camera = visualizer._renderer._c;
+        const right = camera.position.clone().set(1, 0, 0).applyQuaternion(camera.quaternion).normalize();
+        const up = camera.position.clone().set(0, 1, 0).applyQuaternion(camera.quaternion).normalize();
+        let extentX = 0;
+        let extentY = 0;
+        visualizer.model.atoms.forEach((atom) => {
+          const dx = atom.xyz[0] - structureCenter[0];
+          const dy = atom.xyz[1] - structureCenter[1];
+          const dz = atom.xyz[2] - structureCenter[2];
+          extentX = Math.max(extentX, Math.abs(dx * right.x + dy * right.y + dz * right.z));
+          extentY = Math.max(extentY, Math.abs(dx * up.x + dy * up.y + dz * up.z));
+        });
+        extentX += 1.35;
+        extentY += 1.35;
+        const zoomX = (camera.right - camera.left) * 0.82 / Math.max(2 * extentX, 0.001);
+        const zoomY = (camera.top - camera.bottom) * 0.82 / Math.max(2 * extentY, 0.001);
+        camera.zoom = Math.max(0.28, Math.min(1.95, zoomX, zoomY));
+        camera.updateProjectionMatrix();
+        viewerElement.dataset.initialZoom = camera.zoom.toFixed(4);
+      }
+
+      function setAxisView(axis) {
+        const camera = visualizer._renderer._c;
+        const target = structureCenter;
+        const normalized = visualizer.model.cell.map((vector) => {
+          const length = Math.hypot(...vector);
+          return vector.map((value) => value / length);
+        });
+        const views = {
+          a:{direction:normalized[0], up:normalized[2]},
+          b:{direction:normalized[1], up:normalized[2]},
+          c:{direction:normalized[2], up:normalized[1]}
+        };
+        const view = views[axis] || views.a;
+        camera.position.set(
+          target[0] + view.direction[0] * 100,
+          target[1] + view.direction[1] * 100,
+          target[2] + view.direction[2] * 100
+        );
+        camera.up.set(...view.up);
+        camera.lookAt(...target);
+        controls.target.set(...target);
+        controls.update();
+        fitStructureToView();
+        controls.update();
+        updateAxisCorner();
+        document.querySelectorAll(".axis-button").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.axis === axis));
+        });
+      }
+
+      function centerModelTransform() {
+        const atoms = visualizer.model.atoms;
+        const minimum = [Infinity, Infinity, Infinity];
+        const maximum = [-Infinity, -Infinity, -Infinity];
+        atoms.forEach((atom) => atom.xyz.forEach((coordinate, axis) => {
+          minimum[axis] = Math.min(minimum[axis], coordinate);
+          maximum[axis] = Math.max(maximum[axis], coordinate);
+        }));
+        const center = minimum.map((value, axis) => (value + maximum[axis]) / 2);
+        structureCenter = center;
+        rotatingGroups.forEach((group) => {
+          group.children.forEach((child) => {
+            child.position.x -= center[0];
+            child.position.y -= center[1];
+            child.position.z -= center[2];
+          });
+          group.position.set(center[0], center[1], center[2]);
+          group.updateMatrixWorld(true);
+        });
+        visualizer.centerCamera(center);
+      }
+
+      function applyDisplaySettings() {
+        visualizer.displayed = visualizer.model.find({all:[]});
+        visualizer.displayed._bonds.forEach((bond) => { bond.radius = 0.1; });
+        centerModelTransform();
+        configureAxes();
+        visualizer._renderer._r.setClearColor(0xffffff, 1);
+        visualizer._renderer.setAmbientLight(0.45);
+        visualizer._renderer.setDirectionalLight(0.75, 0.5, 1, -1);
+        viewerElement.dataset.supercell = supercell.join("×");
+        viewerElement.dataset.atomCount = String(visualizer.model.atoms.length);
+        viewerElement.dataset.bondCount = String(visualizer.displayed._bonds.length);
+      }
+
+      rebuildActualBonds();
+      visualizer.displayModel(modelName);
+      applyDisplaySettings();
+      setAxisView("a");
+      const renderer = visualizer._renderer._r;
+      renderer.autoClear = true;
+      renderer.autoClearColor = true;
+      renderer.autoClearDepth = true;
+      renderer.autoClearStencil = true;
+      controls.addEventListener("change", updateAxisCorner);
+      canvas.addEventListener("wheel", updateAxisCorner, {passive:true});
+      window.addEventListener("resize", updateAxisCorner, {passive:true});
+      document.querySelectorAll(".axis-button").forEach((button) => {
+        button.addEventListener("click", () => setAxisView(button.dataset.axis));
+      });
+      updateAxisCorner();
+    })();
+  </script>
+</div>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>浅白的黄色</td><th>光泽</th><td>树脂光泽至油脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>白色</td></tr><tr><th>折射率</th><td>Np=2.2452（Na）；Nm=2.0377（Na）；Ng=1.9579（Na）</td><th>摩氏硬度</th><td>1½-2½</td></tr><tr><th>相对密度</th><td>2.07</td><th>韧性</th><td>性脆至可切</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>硫磺可由火山口气体升华、微生物活动或低氧化还原电位且强酸性条件下的化学反应形成，也能在黄铁矿等硫化物成矿期分解产生，沉积岩中同样有产出。</td></tr><tr><th>伴生矿物</th><td>常与石膏、硬石膏、石盐、钠云母、方解石和天青石相伴。</td></tr><tr><th>应用</th><td>硫磺主要用于生产硫酸和化肥，也是造纸、炸药及橡胶工业的重要原料。</td></tr></tbody></table></section></main></body></html>
