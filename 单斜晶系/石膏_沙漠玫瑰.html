@@ -7,8 +7,7 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
 .summary{font-size:15px;background:#fff;border:1px solid var(--line);border-left:4px solid #71aeb0;border-radius:4px;padding:17px 20px;margin:0}.detail-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}.detail-table th,.detail-table td{border-bottom:1px solid var(--line);padding:10px 13px;vertical-align:middle}.detail-table tr:last-child th,.detail-table tr:last-child td{border-bottom:0}.detail-table th{width:15%;background:#f4f8f8;color:#365a61;text-align:left;font-weight:600}.detail-table td p{margin:.2em 0}.detail-table.two-col th{width:15%}.detail-table.two-col td{width:35%}.detail-table.two-col td[colspan="3"]{width:auto}.detail-table .empty-cell{background:#fff}.muted{color:var(--muted);margin:4px 0}
 .back{display:inline-block;margin-bottom:16px;color:#0c6b6f;text-decoration:none;border-bottom:1px solid #abd0d0}.back:hover{text-decoration:none;color:#084e51}
 .toolbar{background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:22px 0;display:flex;gap:12px;align-items:center}.toolbar input{flex:1;padding:10px 12px;border:1px solid #c4d3d8;border-radius:4px;font-size:15px}.count{color:var(--muted);font-size:14px;white-space:nowrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-top:4px solid #79aeb0;border-radius:4px;padding:17px 18px}.card h3{margin:0 0 2px;font-size:18px;color:#155e75}.card .en{font-size:13px;color:var(--muted);margin-bottom:8px}.card p{margin:4px 0;font-size:13px}.card a{display:inline-block;margin-top:9px;color:#0c6b6f;text-decoration:none;font-weight:600}.card a:hover{text-decoration:underline}
-.structure-placeholder{margin:0;padding:22px 18px;border:1px dashed #8db5b8;background:#f7fbfb;color:#5d737b;text-align:center;border-radius:4px}.param{display:inline-block;margin-right:8px;white-space:nowrap}.param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}.detail-table td{line-height:1.75}.source p{margin:7px 0}
-@media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero,section{box-shadow:none}.toolbar,.back{display:none}.structure-placeholder{break-inside:avoid}}
+.structure-placeholder{margin:0;padding:22px 18px;border:1px dashed #8db5b8;background:#f7fbfb;color:#5d737b;text-align:center;border-radius:4px}.param{display:inline-block;margin-right:8px;white-space:nowrap}.param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}.detail-table td{line-height:1.75}.source p{margin:7px 0}@media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero,section{box-shadow:none}.toolbar,.back{display:none}.structure-placeholder{break-inside:avoid}}
 
 .structure-viewer{position:relative;width:100%;height:600px;min-height:520px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(34,49,59,.06)}
 .structure-viewer canvas{display:block;width:100%;height:100%;min-height:520px}
@@ -18,6 +17,32 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
 .axis-button:hover,.axis-button:focus-visible{outline:none;filter:brightness(.94)}.axis-button[aria-pressed="true"]{color:#fff}
 .axis-button[data-axis="a"][aria-pressed="true"]{background:#d62828}.axis-button[data-axis="b"][aria-pressed="true"]{background:#16883e}.axis-button[data-axis="c"][aria-pressed="true"]{background:#175dcc}
 
+
+/* 移动端响应式布局：缩小页面比例并控制结构查看器高度 */
+@media screen and (max-width:720px){
+  html{font-size:15px}
+  body{font-size:14px;line-height:1.6;overflow-x:hidden}
+  .page{width:100%;max-width:none;margin:14px auto;padding:0 10px}
+  .back{margin-bottom:10px;font-size:13px}
+  .hero{border-left-width:5px;padding:14px 16px}
+  .hero h1{font-size:25px;letter-spacing:.02em}
+  .hero .en{font-size:14px}
+  section{margin:18px 0;border-top-width:1px}
+  h2{margin:0 0 8px;padding:8px 0 6px;font-size:18px}
+  .summary{font-size:14px;line-height:1.65;padding:11px 12px}
+  .detail-table{font-size:13px;table-layout:fixed}
+  .detail-table th,.detail-table td{padding:7px 8px;line-height:1.55;overflow-wrap:anywhere;word-break:break-word}
+  .detail-table th{white-space:nowrap}
+  .detail-table.two-col th{width:18%}
+  .detail-table.two-col td{width:32%}
+  .detail-table:not(.two-col) th{width:26%}
+  .detail-table:not(.two-col) td{width:74%}
+  .structure-controls{width:90%;gap:6px;margin:0 0 8px;padding:6px 8px;font-size:12px}
+  .axis-button{width:30px;height:28px;font-size:15px}
+  .structure-viewer{width:90%;height:auto;aspect-ratio:1.633 / 1;min-height:0;max-height:none;margin-left:0;margin-right:auto}
+  .structure-viewer canvas{height:100%;min-height:0!important}
+  .source p{margin:5px 0}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>沙漠玫瑰</h1><div class="en">Gypsum</div></header><section><h2>简介</h2><p class="summary">沙漠玫瑰的花朵形态来自石膏晶片在干旱环境中的反复生长和风沙聚集，它是地质过程塑造出的天然几何体。每一枚晶簇都保留着蒸发、毛细水运移和沉积间歇的痕迹，因此兼具观赏性和地学故事。沙漠玫瑰是石膏晶片在风沙和蒸发作用下聚集形成的玫瑰状集合体，颜色多为米黄、浅褐或白色；它不是新的独立矿物种，而是石膏的一种特殊集合体形态，晶片边缘较脆。晶片呈放射花瓣状叠生，风沙颗粒常被包裹在层间，形成独特的沙漠纹理。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>沙漠玫瑰</td></tr><tr><th>英文名</th><td>Gypsum</td></tr><tr><th>矿物名称</th><td>石膏</td></tr><tr><th>矿物分类</th><td>硫酸盐矿物</td></tr><tr><th>晶体化学式</th><td>CaSO<sub>4</sub> · 2H<sub>2</sub>O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>单斜晶系</td></tr><tr><th>晶类</th><td>斜方柱晶类</td></tr><tr><th>空间群</th><td>C<sup>6</sup><sub>2h</sub>-I2/a</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5.679(5) Å</span>；<span class="param"><b>b</b> = 15.202(14) Å</span>；<span class="param"><b>c</b> = 6.522(6) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 118.43°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -301,8 +326,8 @@ _cod_related_entry_code
         const worldHeight = (camera.top - camera.bottom) / camera.zoom;
         const canvasWidth = canvas.clientWidth || canvas.width || 1;
         const canvasHeight = canvas.clientHeight || canvas.height || 1;
-        const marginX = worldWidth * 96 / canvasWidth;
-        const marginY = worldHeight * 92 / canvasHeight;
+        const marginX = worldWidth * (canvasWidth <= 720 ? 42 : 96) / canvasWidth;
+        const marginY = worldHeight * (canvasHeight <= 420 ? 42 : 92) / canvasHeight;
         const corner = target.clone()
           .addScaledVector(right, -worldWidth / 2 + marginX)
           .addScaledVector(up, -worldHeight / 2 + marginY)
