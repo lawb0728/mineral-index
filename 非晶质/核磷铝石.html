@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>核磷铝石｜矿物学习卡</title><style>
+:root{--ink:#22313b;--muted:#6b7c86;--line:#d7e1e5;--accent:#0c6b6f;--soft:#f1f7f6}
+*{box-sizing:border-box}body{margin:0;background:#f7f9fa;color:var(--ink);font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;line-height:1.78}
+.page{max-width:980px;margin:38px auto;padding:0 24px}.hero{background:#fff;color:var(--ink);border:1px solid var(--line);border-left:9px solid var(--accent);border-radius:4px;padding:24px 28px}
+.hero h1{margin:0 0 2px;font-size:32px;letter-spacing:.04em;color:#143f47}.hero .en{font-size:17px;color:var(--muted)}
+section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e3e5}h2{margin:0 0 13px;padding:12px 0 8px;font-size:21px;color:var(--accent);border-bottom:1px solid var(--line);letter-spacing:.04em}
+.summary{font-size:15px;background:#fff;border:1px solid var(--line);border-left:4px solid #71aeb0;border-radius:4px;padding:17px 20px;margin:0}.detail-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden}.detail-table th,.detail-table td{border-bottom:1px solid var(--line);padding:10px 13px;vertical-align:middle}.detail-table tr:last-child th,.detail-table tr:last-child td{border-bottom:0}.detail-table th{width:15%;background:#f4f8f8;color:#365a61;text-align:left;font-weight:600}.detail-table td p{margin:.2em 0}.detail-table.two-col th{width:15%}.detail-table.two-col td{width:35%}.detail-table.two-col td[colspan="3"]{width:auto}.detail-table .empty-cell{background:#fff}.muted{color:var(--muted);margin:4px 0}
+.back{display:inline-block;margin-bottom:16px;color:#0c6b6f;text-decoration:none;border-bottom:1px solid #abd0d0}.back:hover{text-decoration:none;color:#084e51}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin:22px 0;display:flex;gap:12px;align-items:center}.toolbar input{flex:1;padding:10px 12px;border:1px solid #c4d3d8;border-radius:4px;font-size:15px}.count{color:var(--muted);font-size:14px;white-space:nowrap}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-top:4px solid #79aeb0;border-radius:4px;padding:17px 18px}.card h3{margin:0 0 2px;font-size:18px;color:#155e75}.card .en{font-size:13px;color:var(--muted);margin-bottom:8px}.card p{margin:4px 0;font-size:13px}.card a{display:inline-block;margin-top:9px;color:#0c6b6f;text-decoration:none;font-weight:600}.card a:hover{text-decoration:underline}
+.structure-placeholder{margin:0;padding:22px 18px;border:1px dashed #8db5b8;background:#f7fbfb;color:#5d737b;text-align:center;border-radius:4px}.param{display:inline-block;margin-right:8px;white-space:nowrap}.param b{font-family:"Cambria Math","Times New Roman",serif;font-weight:600}.detail-table td{line-height:1.75}.source p{margin:7px 0}@media print{body{background:#fff}.page{max-width:none;margin:0;padding:0}.hero,section{box-shadow:none}.toolbar,.back{display:none}.structure-placeholder{break-inside:avoid}}
+
+.structure-viewer{position:relative;width:100%;height:600px;min-height:520px;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;box-shadow:0 2px 8px rgba(34,49,59,.06)}
+.structure-viewer canvas{display:block;width:100%;height:100%;min-height:520px}
+.structure-controls{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px;padding:8px 10px;background:#fff;border:1px solid var(--line);border-radius:4px;color:#365a61;font-size:14px}
+.axis-button{width:34px;height:32px;padding:0;border:1px solid currentColor;border-radius:4px;background:#fff;font:600 16px/1 "Cambria Math","Times New Roman",serif;cursor:pointer}
+.axis-button[data-axis="a"]{color:#d62828}.axis-button[data-axis="b"]{color:#16883e}.axis-button[data-axis="c"]{color:#175dcc}
+.axis-button:hover,.axis-button:focus-visible{outline:none;filter:brightness(.94)}.axis-button[aria-pressed="true"]{color:#fff}
+.axis-button[data-axis="a"][aria-pressed="true"]{background:#d62828}.axis-button[data-axis="b"][aria-pressed="true"]{background:#16883e}.axis-button[data-axis="c"][aria-pressed="true"]{background:#175dcc}
+
+
+/* 移动端响应式布局：缩小页面比例并控制结构查看器高度 */
+@media screen and (max-width:720px){
+  html{font-size:15px}
+  body{font-size:14px;line-height:1.6;overflow-x:hidden}
+  .page{width:100%;max-width:none;margin:14px auto;padding:0 10px}
+  .back{margin-bottom:10px;font-size:13px}
+  .hero{border-left-width:5px;padding:14px 16px}
+  .hero h1{font-size:25px;letter-spacing:.02em}
+  .hero .en{font-size:14px}
+  section{margin:18px 0;border-top-width:1px}
+  h2{margin:0 0 8px;padding:8px 0 6px;font-size:18px}
+  .summary{font-size:14px;line-height:1.65;padding:11px 12px}
+  .detail-table{font-size:13px;table-layout:fixed}
+  .detail-table th,.detail-table td{padding:7px 8px;line-height:1.55;overflow-wrap:anywhere;word-break:break-word}
+  .detail-table th{white-space:nowrap}
+  .detail-table.two-col th{width:18%}
+  .detail-table.two-col td{width:32%}
+  .detail-table:not(.two-col) th{width:26%}
+  .detail-table:not(.two-col) td{width:74%}
+  .structure-controls{width:90%;gap:6px;margin:0 0 8px;padding:6px 8px;font-size:12px}
+  .axis-button{width:30px;height:28px;font-size:15px}
+  .structure-viewer{width:90%;height:auto;aspect-ratio:1.633 / 1;min-height:0;max-height:none;margin-left:0;margin-right:auto}
+  .structure-viewer canvas{height:100%;min-height:0!important}
+  .source p{margin:5px 0}
+}
+</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>核磷铝石</h1><div class="en">Evansite</div></header><section><h2>简介</h2><p class="summary">核磷铝石是含水的碱性铝磷酸盐，属非晶质胶体矿物，常呈钟乳状、葡萄状、结核状或壳皮状集合体，断口为典型的贝壳状。新鲜面多为无色至乳白色，含铁或有机质时会带黄、绿、褐乃至近黑的色调，脱水后表面易开裂。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>核磷铝石</td></tr><tr><th>英文名</th><td>Evansite</td></tr><tr><th>矿物名称</th><td>核磷铝石</td></tr><tr><th>矿物分类</th><td>磷酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Al<sub>3</sub>(PO<sub>4</sub>)(OH)<sub>6</sub> · 6H<sub>2</sub>O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>非晶质</td></tr></tbody></table></section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、乳白色，常带黄色、绿色、褐色或蓝色色调</td><th>光泽</th><td>玻璃光泽至蜡状光泽，风化面呈土状光泽</td></tr><tr><th>透明度</th><td>半透明至不透明</td><th>折射率</th><td>n = 1.47-1.53</td></tr><tr><th>摩氏硬度</th><td>3-4</td><th>相对密度</th><td>1.9-2.2</td></tr><tr><th>韧性</th><td colspan="3">性脆，贝壳状断口</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>核磷铝石属次生矿物，多由含磷溶液在硫化物矿床或磷灰石矿体的氧化带中与含铝物质反应后作为胶体沉淀形成，常见于黄铁矿矿床的裂隙、页岩与板岩的空隙以及褐铁矿帽之中。</td></tr><tr><th>伴生矿物</th><td>常与褐铁矿、黄铁矿、磷铝石、银星石、蓝铁矿和玉髓共生。</td></tr><tr><th>应用</th><td>主要作为矿物标本和研究次生磷酸盐成因的对象，色泽美观、质地致密的结核偶被打磨成装饰品，不作为工业磷矿石开采。</td></tr></tbody></table></section></main></body></html>
