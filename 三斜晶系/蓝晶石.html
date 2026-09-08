@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>蓝晶石</h1><div class="en">Kyanite</div></header><section><h2>简介</h2><p class="summary">蓝晶石是Al₂SiO₅的三种多形之一，蓝色刀片状晶体和明显的方向性硬度差异是重要识别特征。它多在中高压区域变质环境中形成，与红柱石、夕线石的组合可帮助判断变质温压条件，也可作为耐火材料原料。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>蓝晶石</td></tr><tr><th>英文名</th><td>Kyanite</td></tr><tr><th>矿物名称</th><td>蓝晶石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Al<sub>2</sub>(SiO<sub>4</sub>)O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>三斜晶系</td></tr><tr><th>晶类</th><td>平行双面晶类</td></tr><tr><th>空间群</th><td>P1</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 7.1262(12) Å</span>；<span class="param"><b>b</b> = 7.8520(10) Å</span>；<span class="param"><b>c</b> = 5.5724(10) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 89.99(2)°</span>；<span class="param"><b>β</b> = 101.11(2)°</span>；<span class="param"><b>γ</b> = 106.03(1)°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -488,4 +500,22 @@ Al 3.000
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>蓝色、青色或白色，亦为灰色、绿色、黄色、粉红色和黑色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，Np=无色，Nm=紫色至蓝色，Ng=钴蓝色</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.710-1.718；Nm=1.719-1.724；Ng=1.724-1.734</td></tr><tr><th>摩氏硬度</th><td>5½-7</td><th>相对密度</th><td>3.53-3.67</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蓝晶石是富铝岩石在中压低温区域变质作用下形成的典型矿物，常见于结晶片岩和高压变质带，与铁铝榴石的共生比与堇青石更常见。</td></tr><tr><th>伴生矿物</th><td>常与十字石、红柱石、硅线石、滑石、角闪石、铝直闪石、莫来石和刚玉共生。</td></tr><tr><th>应用</th><td>蓝晶石受热后体积稳定且耐高温，主要用作耐火材料和高温陶瓷原料。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>蓝色、青色或白色，亦为灰色、绿色、黄色、粉红色和黑色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，Np=无色，Nm=紫色至蓝色，Ng=钴蓝色</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.710-1.718；Nm=1.719-1.724；Ng=1.724-1.734</td></tr><tr><th>摩氏硬度</th><td>5½-7</td><th>相对密度</th><td>3.53-3.67</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/三斜晶系/蓝晶石/06969390017609067332555.jpg" alt="蓝晶石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蓝晶石是富铝岩石在中压低温区域变质作用下形成的典型矿物，常见于结晶片岩和高压变质带，与铁铝榴石的共生比与堇青石更常见。</td></tr><tr><th>伴生矿物</th><td>常与十字石、红柱石、硅线石、滑石、角闪石、铝直闪石、莫来石和刚玉共生。</td></tr><tr><th>应用</th><td>蓝晶石受热后体积稳定且耐高温，主要用作耐火材料和高温陶瓷原料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>天青石</h1><div class="en">Celestine</div></header><section><h2>简介</h2><p class="summary">天青石是硫酸锶矿物，淡蓝至白色板状晶体和晶簇常在蒸发岩、沉积岩孔隙中生长。它与石膏、方解石等蒸发盐类共生，是提取锶的主要矿物，晶体透明度和蓝色深浅会随杂质与生长环境而变化。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>天青石</td></tr><tr><th>英文名</th><td>Celestine</td></tr><tr><th>矿物名称</th><td>天青石</td></tr><tr><th>矿物分类</th><td>硫酸盐矿物</td></tr><tr><th>晶体化学式</th><td>SrSO<sub>4</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>斜方晶系</td></tr><tr><th>空间群</th><td>Pnma</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 8.359 Å</span>；<span class="param"><b>b</b> = 5.352 Å</span>；<span class="param"><b>c</b> = 6.866 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -469,4 +481,22 @@ O -2.000
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>无色、白色、浅蓝色、粉色、浅绿色、浅棕色或黑色；透射光下为无色或微带色调</td><th>光泽</th><td>玻璃光泽，解理面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，蓝色，靛蓝色，紫蓝色，紫色</td></tr><tr><th>色散</th><td>中等，r＜v</td><th>折射率</th><td>Np=1.619-1.622；Nm=1.622-1.624；Ng=1.630-1.632</td></tr><tr><th>摩氏硬度</th><td>3-3½</td><th>相对密度</th><td>3.96-3.98</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>天青石主要由沉积成岩作用形成，常以裂隙或晶洞充填物出现，由含锶卤水或地下水沉淀而成；在热液脉和基性火山岩中也有产出。</td></tr><tr><th>伴生矿物</th><td>层状蒸发岩中常与石膏、硬石膏和硫磺共生，碳酸盐岩洞穴中则常伴有菱锶矿、方解石、白云石、硬石膏、石膏和萤石。</td></tr><tr><th>应用</th><td>天青石是提炼锶及制备锶化合物的主要原料，可用于显像管屏幕、红色焰火和信号弹等产品。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>无色、白色、浅蓝色、粉色、浅绿色、浅棕色或黑色；透射光下为无色或微带色调</td><th>光泽</th><td>玻璃光泽，解理面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，蓝色，靛蓝色，紫蓝色，紫色</td></tr><tr><th>色散</th><td>中等，r＜v</td><th>折射率</th><td>Np=1.619-1.622；Nm=1.622-1.624；Ng=1.630-1.632</td></tr><tr><th>摩氏硬度</th><td>3-3½</td><th>相对密度</th><td>3.96-3.98</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/斜方晶系/天青石/04498920017851831408069.jpg" alt="天青石"><img src="../矿物图片/斜方晶系/天青石/07001960017863597005616.jpg" alt="天青石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>天青石主要由沉积成岩作用形成，常以裂隙或晶洞充填物出现，由含锶卤水或地下水沉淀而成；在热液脉和基性火山岩中也有产出。</td></tr><tr><th>伴生矿物</th><td>层状蒸发岩中常与石膏、硬石膏和硫磺共生，碳酸盐岩洞穴中则常伴有菱锶矿、方解石、白云石、硬石膏、石膏和萤石。</td></tr><tr><th>应用</th><td>天青石是提炼锶及制备锶化合物的主要原料，可用于显像管屏幕、红色焰火和信号弹等产品。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

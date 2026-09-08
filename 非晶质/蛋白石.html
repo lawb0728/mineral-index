@@ -43,4 +43,34 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
-</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>蛋白石</h1><div class="en">Opal</div></header><section><h2>简介</h2><p class="summary">蛋白石是含水的二氧化硅，含水量通常为百分之三到十，内部由纳米级二氧化硅小球堆积而成，缺乏长程有序，因此归为非晶质。当小球排列足够规整时会对可见光产生衍射，形成随角度变化的斑块状“变彩”，这是贵蛋白石最重要的鉴定特征。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>蛋白石</td></tr><tr><th>英文名</th><td>Opal</td></tr><tr><th>矿物名称</th><td>蛋白石</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>SiO<sub>2</sub> · nH<sub>2</sub>O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>非晶质</td></tr></tbody></table></section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、乳白色，亦有黄、红、褐、绿、蓝、灰至黑色</td><th>光泽</th><td>玻璃光泽至树脂光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>折射率</th><td>n = 1.37-1.47</td></tr><tr><th>摩氏硬度</th><td>5½-6½</td><th>相对密度</th><td>1.99-2.25</td></tr><tr><th>韧性</th><td>性脆，贝壳状断口，失水易产生裂纹</td><th>其它</th><td>部分蛋白石在紫外线下显绿色或黄绿色荧光，并可具磷光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蛋白石由富含二氧化硅的低温溶液在近地表环境中沉淀而成，常见于火山岩的孔洞与裂隙、硅质热泉沉积（硅华）、风化壳以及沉积岩的空隙中，也可由硅质生物遗骸转化，或交代木材形成硅化木。</td></tr><tr><th>伴生矿物</th><td>常与玉髓、石英、方英石、沸石类矿物、褐铁矿和高岭石共生。</td></tr><tr><th>应用</th><td>具变彩的贵蛋白石是重要的宝石品种，澳大利亚为经典产地；普通蛋白石和硅藻质蛋白石则用作研磨材料、过滤介质、绝热材料和陶瓷原料。</td></tr></tbody></table></section></main></body></html>
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
+</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>蛋白石</h1><div class="en">Opal</div></header><section><h2>简介</h2><p class="summary">蛋白石是含水的二氧化硅，含水量通常为百分之三到十，内部由纳米级二氧化硅小球堆积而成，缺乏长程有序，因此归为非晶质。当小球排列足够规整时会对可见光产生衍射，形成随角度变化的斑块状“变彩”，这是贵蛋白石最重要的鉴定特征。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>蛋白石</td></tr><tr><th>英文名</th><td>Opal</td></tr><tr><th>矿物名称</th><td>蛋白石</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>SiO<sub>2</sub> · nH<sub>2</sub>O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>非晶质</td></tr></tbody></table></section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、乳白色，亦有黄、红、褐、绿、蓝、灰至黑色</td><th>光泽</th><td>玻璃光泽至树脂光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>折射率</th><td>n = 1.37-1.47</td></tr><tr><th>摩氏硬度</th><td>5½-6½</td><th>相对密度</th><td>1.99-2.25</td></tr><tr><th>韧性</th><td>性脆，贝壳状断口，失水易产生裂纹</td><th>其它</th><td>部分蛋白石在紫外线下显绿色或黄绿色荧光，并可具磷光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/非晶质/蛋白石/03160540017887665261055.jpg" alt="蛋白石"><img src="../矿物图片/非晶质/蛋白石/09819240017864282828586.jpg" alt="蛋白石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蛋白石由富含二氧化硅的低温溶液在近地表环境中沉淀而成，常见于火山岩的孔洞与裂隙、硅质热泉沉积（硅华）、风化壳以及沉积岩的空隙中，也可由硅质生物遗骸转化，或交代木材形成硅化木。</td></tr><tr><th>伴生矿物</th><td>常与玉髓、石英、方英石、沸石类矿物、褐铁矿和高岭石共生。</td></tr><tr><th>应用</th><td>具变彩的贵蛋白石是重要的宝石品种，澳大利亚为经典产地；普通蛋白石和硅藻质蛋白石则用作研磨材料、过滤介质、绝热材料和陶瓷原料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

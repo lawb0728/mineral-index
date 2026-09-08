@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>尖晶石</h1><div class="en">Spinel</div></header><section><h2>简介</h2><p class="summary">尖晶石族矿物常形成规则八面体，颜色可由红色延伸到蓝色、紫色和黑色，透明品种具有宝石价值。稳定的尖晶石型结构能够容纳镁、铁、锌、铬等多种元素，因而既见于镁质变质岩和火成岩，也用于研究地幔物质和功能陶瓷。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>尖晶石</td></tr><tr><th>英文名</th><td>Spinel</td></tr><tr><th>矿物名称</th><td>尖晶石</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>MgAl<sub>2</sub>O<sub>4</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>等轴晶系</td></tr><tr><th>晶类</th><td>六八面体晶类</td></tr><tr><th>空间群</th><td>Fd3m</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 8.0898(9) Å</span>；<span class="param"><b>b</b> = 8.0898(9) Å</span>；<span class="param"><b>c</b> = 8.0898(9) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -659,4 +671,22 @@ O -2.000
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>无色、红色、蓝色、靛蓝色、黄色、粉红色、紫色等</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至微透明</td><th>折射率</th><td>1.719</td></tr><tr><th>摩氏硬度</th><td>7½-8</td><th>相对密度</th><td>3.6-4.1</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>尖晶石多形成于镁质灰岩与酸性侵入岩的接触变质带，并可随镁橄榄石、透辉石等矿物出现；挥发组分参与时会形成镁尖晶石、硅镁石族矿物和金云母组合，质地纯净且色彩鲜艳的宝石级品种常见于漂砾矿床。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有镁橄榄石、粒硅镁石、方柱石、金云母、刚玉、矽线石和红柱石。</td></tr><tr><th>应用</th><td>透明鲜艳的尖晶石可作宝石，普通尖晶石因耐高温和化学稳定性较好，可用于耐火材料、陶瓷和功能氧化物研究，晶体标本亦具收藏价值。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col has-half-row"><tbody><tr><th>颜色</th><td>无色、红色、蓝色、靛蓝色、黄色、粉红色、紫色等</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至微透明</td><th>折射率</th><td>1.719</td></tr><tr><th>摩氏硬度</th><td>7½-8</td><th>相对密度</th><td>3.6-4.1</td></tr><tr class="half-row"><th>韧性</th><td>性脆</td><th class="empty-cell"></th><td class="empty-cell"></td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/等轴晶系/尖晶石/09883810017851837425523.jpg" alt="尖晶石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>尖晶石多形成于镁质灰岩与酸性侵入岩的接触变质带，并可随镁橄榄石、透辉石等矿物出现；挥发组分参与时会形成镁尖晶石、硅镁石族矿物和金云母组合，质地纯净且色彩鲜艳的宝石级品种常见于漂砾矿床。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有镁橄榄石、粒硅镁石、方柱石、金云母、刚玉、矽线石和红柱石。</td></tr><tr><th>应用</th><td>透明鲜艳的尖晶石可作宝石，普通尖晶石因耐高温和化学稳定性较好，可用于耐火材料、陶瓷和功能氧化物研究，晶体标本亦具收藏价值。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

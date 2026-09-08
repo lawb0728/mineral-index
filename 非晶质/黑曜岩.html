@@ -43,4 +43,34 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
-</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>黑曜岩</h1><div class="en">Obsidian</div></header><section><h2>简介</h2><p class="summary">黑曜岩是酸性岩浆迅速冷却、来不及结晶而形成的天然火山玻璃，成分接近流纹岩，二氧化硅含量通常高于百分之七十。它质地均匀致密，断口呈锋利的贝壳状，因含微量磁铁矿和赤铁矿微粒而多呈黑色，含气泡或雏晶时可显出金属光泽与“雪花”状花纹。严格来说它属于岩石而非矿物种。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>黑曜岩</td></tr><tr><th>英文名</th><td>Obsidian</td></tr><tr><th>矿物名称</th><td>黑曜岩（火山玻璃）</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>SiO<sub>2</sub>（含 Al、Na、K、Fe 等）</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>非晶质</td></tr></tbody></table></section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>黑色为主，亦有褐色、灰色、红褐色及带虹彩者</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>半透明至不透明，薄片边缘可透光</td><th>折射率</th><td>n = 1.48-1.51</td></tr><tr><th>摩氏硬度</th><td>5-6</td><th>相对密度</th><td>2.35-2.60</td></tr><tr><th>韧性</th><td colspan="3">性脆，贝壳状断口，边缘极锋利</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黑曜岩形成于流纹质熔岩流和火山穹丘的边缘或表层，是岩浆在与空气或水接触时急速淬冷的产物。由于玻璃在地质时间尺度上会逐渐水化并结晶化（脱玻化），黑曜岩多见于较新的火山区，古老者往往已转变为珍珠岩或霏细岩。</td></tr><tr><th>伴生矿物</th><td>常与浮岩、珍珠岩、松脂岩、流纹岩以及球粒状雏晶的方英石共生。</td></tr><tr><th>应用</th><td>史前人类广泛用它打制刀、镞等锐利石器，是考古学产地溯源研究的重要材料；现代主要用作雕刻与首饰材料，也用于制作外科手术刀刃的研究。</td></tr></tbody></table></section></main></body></html>
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
+</style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>黑曜岩</h1><div class="en">Obsidian</div></header><section><h2>简介</h2><p class="summary">黑曜岩是酸性岩浆迅速冷却、来不及结晶而形成的天然火山玻璃，成分接近流纹岩，二氧化硅含量通常高于百分之七十。它质地均匀致密，断口呈锋利的贝壳状，因含微量磁铁矿和赤铁矿微粒而多呈黑色，含气泡或雏晶时可显出金属光泽与“雪花”状花纹。严格来说它属于岩石而非矿物种。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>黑曜岩</td></tr><tr><th>英文名</th><td>Obsidian</td></tr><tr><th>矿物名称</th><td>黑曜岩（火山玻璃）</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>SiO<sub>2</sub>（含 Al、Na、K、Fe 等）</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>非晶质</td></tr></tbody></table></section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>黑色为主，亦有褐色、灰色、红褐色及带虹彩者</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>半透明至不透明，薄片边缘可透光</td><th>折射率</th><td>n = 1.48-1.51</td></tr><tr><th>摩氏硬度</th><td>5-6</td><th>相对密度</th><td>2.35-2.60</td></tr><tr><th>韧性</th><td colspan="3">性脆，贝壳状断口，边缘极锋利</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/非晶质/黑曜岩/08062480017729873704278.jpg" alt="黑曜岩"><img src="../矿物图片/非晶质/黑曜岩/09371070017644917579106.jpg" alt="黑曜岩"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黑曜岩形成于流纹质熔岩流和火山穹丘的边缘或表层，是岩浆在与空气或水接触时急速淬冷的产物。由于玻璃在地质时间尺度上会逐渐水化并结晶化（脱玻化），黑曜岩多见于较新的火山区，古老者往往已转变为珍珠岩或霏细岩。</td></tr><tr><th>伴生矿物</th><td>常与浮岩、珍珠岩、松脂岩、流纹岩以及球粒状雏晶的方英石共生。</td></tr><tr><th>应用</th><td>史前人类广泛用它打制刀、镞等锐利石器，是考古学产地溯源研究的重要材料；现代主要用作雕刻与首饰材料，也用于制作外科手术刀刃的研究。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

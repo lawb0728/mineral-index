@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>白云母</h1><div class="en">Muscovite</div></header><section><h2>简介</h2><p class="summary">白云母具有银白色珍珠光泽和完全底面解理，薄片可剥离成近透明、具有柔韧性的片层，是观察层状硅酸盐结构的典型矿物。它常见于花岗岩、片麻岩和伟晶岩，历史上曾用作窗材，如今主要用于电绝缘、耐热填料和矿物研究。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>白云母</td></tr><tr><th>英文名</th><td>Muscovite</td></tr><tr><th>矿物名称</th><td>白云母</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>KAl<sub>2</sub>(AlSi<sub>3</sub>O<sub>10</sub>)(OH)<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>单斜晶系</td></tr><tr><th>晶类</th><td>斜方柱晶类</td></tr><tr><th>空间群</th><td>C<sup>6</sup><sub>2h</sub>-C2/c</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 0.519nm</span>；<span class="param"><b>b</b> = 0.904nm</span>；<span class="param"><b>c</b> = 2.008nm</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 95.0833°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -525,4 +537,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、灰色、褐色、绿色、黄色、玫瑰红色至红色；薄片下常见无色，也可有浅黄色、绿色、红色-褐色</td><th>光泽</th><td>玻璃光泽，珍珠光泽，丝绢光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱（有颜色者多色性）</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.552-1.576；Nm=1.582-1.615；Ng=1.587-1.618</td></tr><tr><th>摩氏硬度</th><td>2½</td><th>相对密度</th><td>2.77-2.88</td></tr><tr><th>韧性</th><td>薄片弹性，韧性高</td><th>其它</th><td>绝缘性能极好。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白云母多见于白云母花岗岩、二云母花岗岩及其伟晶岩，中性正长岩和闪长岩中相对少见，也可形成于云英岩、片岩和片麻岩，在砂岩、大理岩中较少；花岗伟晶岩常产出晶体较大的白云母，具有工业价值。</td></tr><tr><th>伴生矿物</th><td>常与石英、斜长石、钾长石、黑云母、电气石和黄玉共同出现。</td></tr><tr><th>应用</th><td>白云母具有良好绝缘性，主要用于电容器、无线电真空管以及大功率和高压电气设备的绝缘部件；富含铷、铯或铬的品种还可作为提取这些元素的原料。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、灰色、褐色、绿色、黄色、玫瑰红色至红色；薄片下常见无色，也可有浅黄色、绿色、红色-褐色</td><th>光泽</th><td>玻璃光泽，珍珠光泽，丝绢光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱（有颜色者多色性）</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.552-1.576；Nm=1.582-1.615；Ng=1.587-1.618</td></tr><tr><th>摩氏硬度</th><td>2½</td><th>相对密度</th><td>2.77-2.88</td></tr><tr><th>韧性</th><td>薄片弹性，韧性高</td><th>其它</th><td>绝缘性能极好。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/单斜晶系/白云母/03402680017886374738992.jpg" alt="白云母"><img src="../矿物图片/单斜晶系/白云母/09840770017866633467929.jpg" alt="白云母"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白云母多见于白云母花岗岩、二云母花岗岩及其伟晶岩，中性正长岩和闪长岩中相对少见，也可形成于云英岩、片岩和片麻岩，在砂岩、大理岩中较少；花岗伟晶岩常产出晶体较大的白云母，具有工业价值。</td></tr><tr><th>伴生矿物</th><td>常与石英、斜长石、钾长石、黑云母、电气石和黄玉共同出现。</td></tr><tr><th>应用</th><td>白云母具有良好绝缘性，主要用于电容器、无线电真空管以及大功率和高压电气设备的绝缘部件；富含铷、铯或铬的品种还可作为提取这些元素的原料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

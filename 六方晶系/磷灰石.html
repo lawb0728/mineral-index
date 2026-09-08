@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>磷灰石</h1><div class="en">Fluorapatite</div></header><section><h2>简介</h2><p class="summary">磷灰石是含氟、氯或羟基的磷酸盐，绿色、黄色和蓝色晶体常呈六方柱状，是火成岩中十分常见的副矿物。它的晶体结构与骨骼和牙齿中的无机磷酸盐相近，既可作为磷资源和稀土元素载体，也常用于地球化学年代与岩浆演化研究。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>磷灰石</td></tr><tr><th>英文名</th><td>Fluorapatite</td></tr><tr><th>矿物名称</th><td>氟磷灰石</td></tr><tr><th>矿物分类</th><td>磷酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>F</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>六方晶系</td></tr><tr><th>晶类</th><td>六方双锥晶类、斜方柱晶类</td></tr><tr><th>空间群</th><td>P63/m</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 9.3973 Å</span>；<span class="param"><b>b</b> = 9.3973 Å</span>；<span class="param"><b>c</b> = 6.8782 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 120°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -539,4 +551,22 @@ _citation_journal_id_ISSN
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>海蓝色-绿色、紫色、紫罗兰色、蓝色、粉色、黄色、褐色、白色、无色、可有分带现象；薄片下为无色或依稀有色</td><th>光泽</th><td>玻璃光泽至亚树脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱至强（有颜色者)</td></tr><tr><th>折射率</th><td>No=1.631-1.650；Ne=1.627-1.646</td><th>摩氏硬度</th><td>5</td></tr><tr><th>相对密度</th><td>3.1-3.25</td><th>其它</th><td>可有阴极发光和磷光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>磷灰石是最常见的造岩磷酸盐，常作为火成岩副矿物，在正长岩、碱性岩、碳酸岩和花岗伟晶岩中可成为主要矿物；大理岩、矽卡岩、富钙区域变质岩、阿尔卑斯式裂隙和热液锡矿脉中也有产出，也可作为碎屑岩、磷酸盐岩和红土矿的组成矿物。</td></tr><tr><th>伴生矿物</th><td>常见组合包括透辉石、镁橄榄石、方柱石、金云母、粒硅镁石、方解石和磁铁矿。</td></tr><tr><th>应用</th><td>磷灰石是制取磷肥和磷酸的重要矿物资源，部分矿床还可综合回收稀土元素，透明晶体则用于宝石、教学和科研标本。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>海蓝色-绿色、紫色、紫罗兰色、蓝色、粉色、黄色、褐色、白色、无色、可有分带现象；薄片下为无色或依稀有色</td><th>光泽</th><td>玻璃光泽至亚树脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱至强（有颜色者)</td></tr><tr><th>折射率</th><td>No=1.631-1.650；Ne=1.627-1.646</td><th>摩氏硬度</th><td>5</td></tr><tr><th>相对密度</th><td>3.1-3.25</td><th>其它</th><td>可有阴极发光和磷光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/六方晶系/磷灰石/O1CN01DPhtzc2Eiq5G4YkJJ_!!1885468779.png_q50.jpg_.webp" alt="磷灰石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>磷灰石是最常见的造岩磷酸盐，常作为火成岩副矿物，在正长岩、碱性岩、碳酸岩和花岗伟晶岩中可成为主要矿物；大理岩、矽卡岩、富钙区域变质岩、阿尔卑斯式裂隙和热液锡矿脉中也有产出，也可作为碎屑岩、磷酸盐岩和红土矿的组成矿物。</td></tr><tr><th>伴生矿物</th><td>常见组合包括透辉石、镁橄榄石、方柱石、金云母、粒硅镁石、方解石和磁铁矿。</td></tr><tr><th>应用</th><td>磷灰石是制取磷肥和磷酸的重要矿物资源，部分矿床还可综合回收稀土元素，透明晶体则用于宝石、教学和科研标本。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

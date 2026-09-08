@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>黄铁矿</h1><div class="en">Pyrite</div></header><section><h2>简介</h2><p class="summary">黄铁矿以黄铜色金属光泽和立方体、五角十二面体晶形著称，外观像黄金而被称为“愚人金”。它广泛形成于热液、沉积和变质环境，是硫循环和成矿作用的重要指示矿物，工业上还可作为硫和硫酸原料。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>黄铁矿</td></tr><tr><th>英文名</th><td>Pyrite</td></tr><tr><th>矿物名称</th><td>黄铁矿</td></tr><tr><th>矿物分类</th><td>硫化物</td></tr><tr><th>晶体化学式</th><td>FeS<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>等轴晶系</td></tr><tr><th>晶类</th><td>偏方复十二面体晶类</td></tr><tr><th>空间群</th><td>Pa3</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5.417 Å</span>；<span class="param"><b>b</b> = 5.417 Å</span>；<span class="param"><b>c</b> = 5.417 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -493,4 +505,22 @@ S 0.00420 0.00420 0.00420 0.00000 0.00000 0.00000
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>浅黄铜色，表面常具有黄褐色锖色</td><th>光泽</th><td>强金属光泽</td></tr><tr><th>透明度</th><td>不透明</td><th>摩氏硬度</th><td>6-6½</td></tr><tr><th>相对密度</th><td>4.8-5</td><th>韧性</th><td>性脆</td></tr><tr><th>其它</th><td colspan="3">熔点约1150℃；导电性随晶体方向和成分变化，接近理论组成时为不良导体，缺硫时导电性增强。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黄铁矿是地壳中分布最广的硫化物之一，可在多种岩石和矿床中形成；岩浆岩内常呈浸染状，代表岩浆期后溶液活动，接触交代矿床中则多在后期热液阶段与其他硫化物共同结晶。</td></tr><tr><th>伴生矿物</th><td>常与磁黄铁矿、白铁矿、方铅矿、闪锌矿、毒砂、黄铜矿及其他硫化物和硫盐共生，也可伴有赤铁矿、萤石、石英、重晶石和方解石。</td></tr><tr><th>应用</th><td>黄铁矿是提硫和制硫酸的重要矿石，副产物可用于炼铁，并可综合回收钴等伴生元素，化工、橡胶、造纸、农药、化肥和染料行业均有应用。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>浅黄铜色，表面常具有黄褐色锖色</td><th>光泽</th><td>强金属光泽</td></tr><tr><th>透明度</th><td>不透明</td><th>摩氏硬度</th><td>6-6½</td></tr><tr><th>相对密度</th><td>4.8-5</td><th>韧性</th><td>性脆</td></tr><tr><th>其它</th><td colspan="3">熔点约1150℃；导电性随晶体方向和成分变化，接近理论组成时为不良导体，缺硫时导电性增强。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/等轴晶系/黄铁矿/04843620017884470726256.jpg" alt="黄铁矿"><img src="../矿物图片/等轴晶系/黄铁矿/O1CN01sEvFWr1Z9f5hjhjk9_!!65913152.png_q50.jpg_.webp" alt="黄铁矿"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黄铁矿是地壳中分布最广的硫化物之一，可在多种岩石和矿床中形成；岩浆岩内常呈浸染状，代表岩浆期后溶液活动，接触交代矿床中则多在后期热液阶段与其他硫化物共同结晶。</td></tr><tr><th>伴生矿物</th><td>常与磁黄铁矿、白铁矿、方铅矿、闪锌矿、毒砂、黄铜矿及其他硫化物和硫盐共生，也可伴有赤铁矿、萤石、石英、重晶石和方解石。</td></tr><tr><th>应用</th><td>黄铁矿是提硫和制硫酸的重要矿石，副产物可用于炼铁，并可综合回收钴等伴生元素，化工、橡胶、造纸、农药、化肥和染料行业均有应用。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

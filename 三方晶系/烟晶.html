@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>烟晶</h1><div class="en">Smoky quartz</div></header><section><h2>简介</h2><p class="summary">烟晶是呈烟褐至深棕色的石英，颜色主要与天然辐照形成的色心及微量铝、铁杂质有关。它仍保持石英的六方柱状习性、硬度和压电特征，透明晶体常被切磨为色调沉稳的宝石或收藏标本。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>烟晶</td></tr><tr><th>英文名</th><td>Smoky quartz</td></tr><tr><th>矿物名称</th><td>石英</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>SiO<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>三方晶系</td></tr><tr><th>晶类</th><td>三方偏方面体晶类</td></tr><tr><th>空间群</th><td>P3121</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 4.9133 Å</span>；<span class="param"><b>b</b> = 4.9133 Å</span>；<span class="param"><b>c</b> = 5.4053 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 120°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -482,4 +494,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>常为无色、乳白色，常由于含有不同的混入物或机械混入物而为多种颜色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至微透明</td><th>折射率</th><td>No=1.533；Ne=1.544</td></tr><tr><th>摩氏硬度</th><td>7</td><th>相对密度</th><td>2.65-2.66</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>长、短波紫外光下可呈黄橙色荧光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>烟晶是石英的含色品种，石英在深成岩浆岩中多于晚期结晶，在酸性火山岩中可形成斑晶并呈β-石英假象，同时也是沉积岩、变质岩的重要造岩矿物，烟色通常与微量元素和辐照缺陷有关。</td></tr><tr><th>伴生矿物</th><td>常与方解石、萤石、长石、透辉石、云母及其他热液矿物共生。</td></tr><tr><th>应用</th><td>透明度较高的烟晶可作观赏石和首饰，石英质原料还用于玻璃、陶瓷、光学仪器及压电器件制造。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>常为无色、乳白色，常由于含有不同的混入物或机械混入物而为多种颜色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>透明至微透明</td><th>折射率</th><td>No=1.533；Ne=1.544</td></tr><tr><th>摩氏硬度</th><td>7</td><th>相对密度</th><td>2.65-2.66</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>长、短波紫外光下可呈黄橙色荧光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/三方晶系/烟晶/09107980017877390642201.jpg" alt="烟晶"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>烟晶是石英的含色品种，石英在深成岩浆岩中多于晚期结晶，在酸性火山岩中可形成斑晶并呈β-石英假象，同时也是沉积岩、变质岩的重要造岩矿物，烟色通常与微量元素和辐照缺陷有关。</td></tr><tr><th>伴生矿物</th><td>常与方解石、萤石、长石、透辉石、云母及其他热液矿物共生。</td></tr><tr><th>应用</th><td>透明度较高的烟晶可作观赏石和首饰，石英质原料还用于玻璃、陶瓷、光学仪器及压电器件制造。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>葡萄石</h1><div class="en">Prehnite</div></header><section><h2>简介</h2><p class="summary">葡萄石常以浅绿至黄绿色的葡萄状、肾状或放射状集合体填充玄武岩杏仁孔和裂隙，半透明质感使其具有柔和的观赏性。它多为低温热液或接触变质晚期产物，断面上可见放射纤维结构，常与沸石和方解石共生。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>葡萄石</td></tr><tr><th>英文名</th><td>Prehnite</td></tr><tr><th>矿物名称</th><td>葡萄石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Ca<sub>2</sub>Al<sub>2</sub>Si<sub>3</sub>O<sub>10</sub>(OH)<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>斜方晶系</td></tr><tr><th>晶类</th><td>斜方单锥晶类</td></tr><tr><th>空间群</th><td>C<sub>2v</sub><sup>2</sup>-P2cm</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 4.63309(9) Å</span>；<span class="param"><b>b</b> = 5.4839(1) Å</span>；<span class="param"><b>c</b> = 18.5100(3) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -475,4 +487,22 @@ Fe 0.2000 0.250000 0.261(3) 0.995(5) Biso 0.700000 Fe
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色、浅黄、灰色、粉色或带各种色调的绿色</td><th>光泽</th><td>玻璃光泽，{001}解理面呈弱珍珠光泽</td></tr><tr><th>透明度</th><td>半透明</td><th>多色性</th><td>无</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.611-1.632；Nm=1.615-1.642；Ng=1.623-1.665</td></tr><tr><th>摩氏硬度</th><td>6-6½</td><th>相对密度</th><td>2.8-2.95</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>长波紫外线下发蓝白色荧光，短波下发黄色荧光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>葡萄石多为接触变质晚期的热液产物，常充填或交代黑榴石裂隙，在正长岩晶洞中可形成晶簇；辽宁等地可见其产于碱性正长岩与石灰岩接触带的矽卡岩，并与多种钙硅酸盐矿物共生。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有沸石、硅硼钙石、针钠钙石、方解石、绿帘石和自然铜。</td></tr><tr><th>应用</th><td>葡萄石多以葡萄状或放射状集合体作观赏石和装饰石，透明度较高、颜色均匀的材料可作小型饰品，晶体还常用于地质教学和收藏。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色、浅黄、灰色、粉色或带各种色调的绿色</td><th>光泽</th><td>玻璃光泽，{001}解理面呈弱珍珠光泽</td></tr><tr><th>透明度</th><td>半透明</td><th>多色性</th><td>无</td></tr><tr><th>色散</th><td>弱</td><th>折射率</th><td>Np=1.611-1.632；Nm=1.615-1.642；Ng=1.623-1.665</td></tr><tr><th>摩氏硬度</th><td>6-6½</td><th>相对密度</th><td>2.8-2.95</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>长波紫外线下发蓝白色荧光，短波下发黄色荧光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/斜方晶系/葡萄石/05656170017879534209229.jpg" alt="葡萄石"><img src="../矿物图片/斜方晶系/葡萄石/O1CN01ic4MX01bnAl9IHq52_!!143733509.jpg_q50.jpg_.webp" alt="葡萄石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>葡萄石多为接触变质晚期的热液产物，常充填或交代黑榴石裂隙，在正长岩晶洞中可形成晶簇；辽宁等地可见其产于碱性正长岩与石灰岩接触带的矽卡岩，并与多种钙硅酸盐矿物共生。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有沸石、硅硼钙石、针钠钙石、方解石、绿帘石和自然铜。</td></tr><tr><th>应用</th><td>葡萄石多以葡萄状或放射状集合体作观赏石和装饰石，透明度较高、颜色均匀的材料可作小型饰品，晶体还常用于地质教学和收藏。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

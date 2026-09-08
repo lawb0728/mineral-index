@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>青金石</h1><div class="en">Lazurite</div></header><section><h2>简介</h2><p class="summary">青金石通常是以蓝方石族矿物为主的深蓝色集合体，并非单一纯矿物；白色方解石和金色黄铁矿斑点构成其最具辨识度的外观。它多由碳酸盐岩与含硫碱性流体交代形成，长期用于印章、镶嵌和雕刻，是兼具地质和文化价值的装饰石。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>青金石</td></tr><tr><th>英文名</th><td>Lazurite</td></tr><tr><th>矿物名称</th><td>青金石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Na<sub>7</sub>Ca(Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>)(SO<sub>4</sub>)(S<sub>3</sub>) · H<sub>2</sub>O</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>等轴晶系</td></tr><tr><th>晶类</th><td>六四面体晶类</td></tr><tr><th>空间群</th><td>T<sub>d</sub><sup>4</sup>-P<span style='text-decoration: overline'>4</span>3n</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 0.909nm</span>；<span class="param"><b>b</b> = 0.909nm</span>；<span class="param"><b>c</b> = 0.909nm</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -513,4 +525,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>深蓝色、紫色，有时为天青色或带绿的蓝色；薄片为蓝色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>半透明至不透明</td><th>折射率</th><td>1.502-1.522</td></tr><tr><th>摩氏硬度</th><td>5-5½</td><th>相对密度</th><td>2.38-2.45</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>青金石矿床较为稀少，主要形成于碱性岩、正长岩、花岗岩或伟晶岩与碳酸盐岩的接触带，属于富铝、富钠流体交代作用的产物。</td></tr><tr><th>伴生矿物</th><td>常与方解石、黄铁矿、硅镁石、透辉石、镁橄榄石、蓝方石和白云母共生。</td></tr><tr><th>应用</th><td>青金石是重要的装饰石材，可用于雕刻、镶嵌和首饰，磨制粉末曾用于制备群青颜料，优质块体也常用于艺术品和收藏。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>深蓝色、紫色，有时为天青色或带绿的蓝色；薄片为蓝色</td><th>光泽</th><td>玻璃光泽</td></tr><tr><th>透明度</th><td>半透明至不透明</td><th>折射率</th><td>1.502-1.522</td></tr><tr><th>摩氏硬度</th><td>5-5½</td><th>相对密度</th><td>2.38-2.45</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/等轴晶系/青金石/09226450017876815021759.jpg" alt="青金石"><img src="../矿物图片/等轴晶系/青金石/O1CN01Y6aHe01bnAq3mbl8D_!!143733509.jpg_q50.jpg_.webp" alt="青金石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>青金石矿床较为稀少，主要形成于碱性岩、正长岩、花岗岩或伟晶岩与碳酸盐岩的接触带，属于富铝、富钠流体交代作用的产物。</td></tr><tr><th>伴生矿物</th><td>常与方解石、黄铁矿、硅镁石、透辉石、镁橄榄石、蓝方石和白云母共生。</td></tr><tr><th>应用</th><td>青金石是重要的装饰石材，可用于雕刻、镶嵌和首饰，磨制粉末曾用于制备群青颜料，优质块体也常用于艺术品和收藏。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

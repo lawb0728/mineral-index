@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>海蓝宝石</h1><div class="en">Aquamarine</div></header><section><h2>简介</h2><p class="summary">海蓝宝石是蓝色至蓝绿色的透明绿柱石，铁元素造成的清澈色调使它呈现类似海水的视觉效果。它常在花岗伟晶岩中形成，六方柱状晶体和较高透明度便于切磨成宝石，也能反映伟晶岩熔体的演化。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>海蓝宝石</td></tr><tr><th>英文名</th><td>Aquamarine</td></tr><tr><th>矿物名称</th><td>绿柱石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>六方晶系</td></tr><tr><th>晶类</th><td>复六方双锥晶类</td></tr><tr><th>空间群</th><td>D<sub>6h</sub><sup>2</sup>-P6/mcc</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 0.9205-0.9274nm</span>；<span class="param"><b>b</b> = 0.9205-0.9274nm</span>；<span class="param"><b>c</b> = 0.9187-0.9249nm</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 120°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -489,4 +501,22 @@ O -2.000
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、淡蓝色至天蓝色、蓝绿色至绿色至绿黄色或黄色、玫瑰红色至桃红色、深粉色至蔓越莓红色，可见颜色分带现象；常见薄层无色透明</td><th>光泽</th><td>玻璃光泽，树脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱至可见，No=无色，黄绿色，淡蓝色，黄红色，Ne=海蓝色，蓝色，紫红色</td></tr><tr><th>折射率</th><td>No=1.567-1.610；Ne=1.565-1.599</td><th>摩氏硬度</th><td>7.5-8</td></tr><tr><th>相对密度</th><td>2.63</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>海蓝宝石是绿柱石的蓝色品种，主要在伟晶岩、云英岩和高温热液矿脉中形成，未受交代的伟晶岩中碱质较低，晶体常与石英、钾长石、微斜长石和白云母一起生长。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有石英、长石、白云母、锂云母、锂辉石、锂磷铝石、电气石、黄玉和锡石。</td></tr><tr><th>应用</th><td>海蓝宝石以透明度和蓝色调为主要价值，主要用于珠宝、饰品和高档观赏石，也常作为晶体标本收藏，基本没有大宗工业用途。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、淡蓝色至天蓝色、蓝绿色至绿色至绿黄色或黄色、玫瑰红色至桃红色、深粉色至蔓越莓红色，可见颜色分带现象；常见薄层无色透明</td><th>光泽</th><td>玻璃光泽，树脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱至可见，No=无色，黄绿色，淡蓝色，黄红色，Ne=海蓝色，蓝色，紫红色</td></tr><tr><th>折射率</th><td>No=1.567-1.610；Ne=1.565-1.599</td><th>摩氏硬度</th><td>7.5-8</td></tr><tr><th>相对密度</th><td>2.63</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/六方晶系/海蓝宝石/05988250017851443252282.jpg" alt="海蓝宝石"><img src="../矿物图片/六方晶系/海蓝宝石/O1CN01uyJryN1bnAlSfhPcO_!!143733509.png_q50.jpg_.webp" alt="海蓝宝石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>海蓝宝石是绿柱石的蓝色品种，主要在伟晶岩、云英岩和高温热液矿脉中形成，未受交代的伟晶岩中碱质较低，晶体常与石英、钾长石、微斜长石和白云母一起生长。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有石英、长石、白云母、锂云母、锂辉石、锂磷铝石、电气石、黄玉和锡石。</td></tr><tr><th>应用</th><td>海蓝宝石以透明度和蓝色调为主要价值，主要用于珠宝、饰品和高档观赏石，也常作为晶体标本收藏，基本没有大宗工业用途。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>白铅矿</h1><div class="en">Cerussite</div></header><section><h2>简介</h2><p class="summary">白铅矿是方铅矿氧化带中的次生碳酸铅，白色或浅色晶体常具金刚光泽，并可形成假六方三连晶。它密度大、折射率高，常与铅矾和磷氯铅矿共生，富集时可作为铅矿石和表生矿化的识别标志。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>白铅矿</td></tr><tr><th>英文名</th><td>Cerussite</td></tr><tr><th>矿物名称</th><td>白铅矿</td></tr><tr><th>矿物分类</th><td>碳酸盐矿物</td></tr><tr><th>晶体化学式</th><td>PbCO<sub>3</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>斜方晶系</td></tr><tr><th>晶类</th><td>斜方双锥晶类</td></tr><tr><th>空间群</th><td>D<sub>2h</sub><sup>16</sup>-Pmcn</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5.179(1) Å</span>；<span class="param"><b>b</b> = 8.492(3) Å</span>；<span class="param"><b>c</b> = 6.141(2) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -522,4 +534,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、浅黄色或灰色，含方铅矿或辉银矿微粒呈黑色，含Fe呈褐色</td><th>光泽</th><td>金刚光泽，玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>色散</th><td>强</td></tr><tr><th>折射率</th><td>Np=1.803；Nm=2.074；Ng=2.076</td><th>摩氏硬度</th><td>3-3½</td></tr><tr><th>相对密度</th><td>6.53-6.57</td><th>韧性</th><td>性极脆</td></tr><tr><th>其它</th><td colspan="3">长波紫外线下发黄色荧光，阴极射线下呈浅蓝绿色。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白铅矿主要出现在铅锌矿床氧化带，是方铅矿风化演化的第二阶段产物，方铅矿先氧化为铅矾，再在含碳酸根的水溶液作用下转化为白铅矿；由于溶解度很低，形成后还能抑制方铅矿继续分解。</td></tr><tr><th>伴生矿物</th><td>常与硫酸铅矿、菱锌矿、孔雀石、蓝铜矿、角铅矿、磷氯铅矿和残余方铅矿相伴。</td></tr><tr><th>应用</th><td>白铅矿是铅矿床氧化带的次生矿物，通常不作为大规模独立矿石开采，主要用于矿物学教学、地质找矿研究和标本收藏；少数富集体可作为铅资源综合利用的组成部分。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色、浅黄色或灰色，含方铅矿或辉银矿微粒呈黑色，含Fe呈褐色</td><th>光泽</th><td>金刚光泽，玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>色散</th><td>强</td></tr><tr><th>折射率</th><td>Np=1.803；Nm=2.074；Ng=2.076</td><th>摩氏硬度</th><td>3-3½</td></tr><tr><th>相对密度</th><td>6.53-6.57</td><th>韧性</th><td>性极脆</td></tr><tr><th>其它</th><td colspan="3">长波紫外线下发黄色荧光，阴极射线下呈浅蓝绿色。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/斜方晶系/白铅矿/02085510017876587463846.jpg" alt="白铅矿"><img src="../矿物图片/斜方晶系/白铅矿/O1CN01WM4VfX20DmgLehzam~hdr~_!!765666816.heic_q50.jpg_.webp" alt="白铅矿"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白铅矿主要出现在铅锌矿床氧化带，是方铅矿风化演化的第二阶段产物，方铅矿先氧化为铅矾，再在含碳酸根的水溶液作用下转化为白铅矿；由于溶解度很低，形成后还能抑制方铅矿继续分解。</td></tr><tr><th>伴生矿物</th><td>常与硫酸铅矿、菱锌矿、孔雀石、蓝铜矿、角铅矿、磷氯铅矿和残余方铅矿相伴。</td></tr><tr><th>应用</th><td>白铅矿是铅矿床氧化带的次生矿物，通常不作为大规模独立矿石开采，主要用于矿物学教学、地质找矿研究和标本收藏；少数富集体可作为铅资源综合利用的组成部分。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

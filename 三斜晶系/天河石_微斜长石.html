@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>天河石</h1><div class="en">Microcline</div></header><section><h2>简介</h2><p class="summary">天河石是微斜长石的蓝绿色品种，颜色常呈不均匀的云雾状分布，鲜明色调使普通长石具有独特的观赏性。其色泽与晶格有序化程度及微量铅、铷等元素有关，通常以块状或粒状集合体产出，适合制作摆件和装饰石。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>天河石</td></tr><tr><th>英文名</th><td>Microcline</td></tr><tr><th>矿物名称</th><td>微斜长石</td></tr><tr><th>矿物分类</th><td>硅酸盐矿物</td></tr><tr><th>晶体化学式</th><td>K(AlSi<sub>3</sub>O<sub>8</sub>)</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>三斜晶系</td></tr><tr><th>晶类</th><td>平行双面晶类</td></tr><tr><th>空间群</th><td>C<sub>i</sub><sup>1</sup>-P<span style=′text-decoration: overline′>1</span></td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 8.5784 Å</span>；<span class="param"><b>b</b> = 12.96 Å</span>；<span class="param"><b>c</b> = 7.2112 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90.3°</span>；<span class="param"><b>β</b> = 116.05°</span>；<span class="param"><b>γ</b> = 89°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -518,4 +530,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色、灰色、浅黄或浅红色，多呈肉红色，异种天河石可呈不均匀的绿色</td><th>光泽</th><td>玻璃光泽，解理面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>色散</th><td>弱</td></tr><tr><th>折射率</th><td>Np=1.514-1.529；Nm=1.518-1.533；Ng=1.521-1.539</td><th>摩氏硬度</th><td>6-6½</td></tr><tr><th>相对密度</th><td>2.54-2.57</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>微斜长石广泛见于片岩、片麻岩和混合岩，在酸性、碱性岩中比正长石更常见而在喷出岩中较少；它是伟晶岩的重要组成，早中期常与石英形成文象结构，晚期可被白云母、石英和钠长石交代。</td></tr><tr><th>伴生矿物</th><td>通常与石英、钠长石、白云母、黑云母和角闪石共生。</td></tr><tr><th>应用</th><td>色泽和透明度较好的天河石可作宝石或装饰石料，微斜长石还可作为提取铷、铯的原料。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色、灰色、浅黄或浅红色，多呈肉红色，异种天河石可呈不均匀的绿色</td><th>光泽</th><td>玻璃光泽，解理面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>色散</th><td>弱</td></tr><tr><th>折射率</th><td>Np=1.514-1.529；Nm=1.518-1.533；Ng=1.521-1.539</td><th>摩氏硬度</th><td>6-6½</td></tr><tr><th>相对密度</th><td>2.54-2.57</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/三斜晶系/天河石/06842400017852918291882.jpg" alt="天河石"><img src="../矿物图片/三斜晶系/天河石/O1CN01HoH61K1fsRfDIEDph_!!3975984062.jpg_q50.jpg_.webp" alt="天河石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>微斜长石广泛见于片岩、片麻岩和混合岩，在酸性、碱性岩中比正长石更常见而在喷出岩中较少；它是伟晶岩的重要组成，早中期常与石英形成文象结构，晚期可被白云母、石英和钠长石交代。</td></tr><tr><th>伴生矿物</th><td>通常与石英、钠长石、白云母、黑云母和角闪石共生。</td></tr><tr><th>应用</th><td>色泽和透明度较好的天河石可作宝石或装饰石料，微斜长石还可作为提取铷、铯的原料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

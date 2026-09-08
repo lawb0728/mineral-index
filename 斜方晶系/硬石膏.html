@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>硬石膏</h1><div class="en">Anhydrite</div></header><section><h2>简介</h2><p class="summary">硬石膏是无水硫酸钙，白色、灰白色或略带蓝色的板状和块状集合体常见于蒸发岩层。它在吸收地下水后可逐渐转变为石膏，这种可逆的含水变化记录了沉积盆地的水分和成岩条件。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>硬石膏</td></tr><tr><th>英文名</th><td>Anhydrite</td></tr><tr><th>矿物名称</th><td>硬石膏</td></tr><tr><th>矿物分类</th><td>硫酸盐矿物</td></tr><tr><th>晶体化学式</th><td>CaSO<sub>4</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>斜方晶系</td></tr><tr><th>晶类</th><td>斜方双锥晶类</td></tr><tr><th>空间群</th><td>D<sub>2h</sub><sup>17</sup>-Amma</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 6.245(1) Å</span>；<span class="param"><b>b</b> = 6.995(2) Å</span>；<span class="param"><b>c</b> = 6.993(2) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -492,4 +504,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色，常微带浅蓝、浅灰、浅红、浅紫色调</td><th>光泽</th><td>玻璃光泽，油脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>Np=无色到浅黄色或玫瑰色，Nm=淡紫色或玫瑰色，Ng=紫色（紫色品种）</td></tr><tr><th>色散</th><td>强</td><th>折射率</th><td>Np=1.567-1.574；Nm=1.574-1.579；Ng=1.609-1.618</td></tr><tr><th>摩氏硬度</th><td>3-3½</td><th>相对密度</th><td>2.98</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>无显著其它物理性质。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>硬石膏主要由化学沉积形成，在盐湖等蒸发环境中可大量聚集并常与石膏共生；近地表露头因压力降低和吸水作用会转变为石膏，热液脉、火山熔岩孔洞及硫化矿床氧化带中也可少量出现。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有石膏、岩盐、钾盐、杂卤石、白云石、方解石、菱镁矿、天青石和自然硫。</td></tr><tr><th>应用</th><td>硬石膏可作为水泥、建筑石膏和硫酸钙填料的原料，部分矿床用于调节土壤和工业配料，晶体标本也有观赏和收藏价值。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>白色，常微带浅蓝、浅灰、浅红、浅紫色调</td><th>光泽</th><td>玻璃光泽，油脂光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>Np=无色到浅黄色或玫瑰色，Nm=淡紫色或玫瑰色，Ng=紫色（紫色品种）</td></tr><tr><th>色散</th><td>强</td><th>折射率</th><td>Np=1.567-1.574；Nm=1.574-1.579；Ng=1.609-1.618</td></tr><tr><th>摩氏硬度</th><td>3-3½</td><th>相对密度</th><td>2.98</td></tr><tr><th>韧性</th><td>性脆</td><th>其它</th><td>无显著其它物理性质。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/斜方晶系/硬石膏/06872830017878083053930.jpg" alt="硬石膏"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>硬石膏主要由化学沉积形成，在盐湖等蒸发环境中可大量聚集并常与石膏共生；近地表露头因压力降低和吸水作用会转变为石膏，热液脉、火山熔岩孔洞及硫化矿床氧化带中也可少量出现。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有石膏、岩盐、钾盐、杂卤石、白云石、方解石、菱镁矿、天青石和自然硫。</td></tr><tr><th>应用</th><td>硬石膏可作为水泥、建筑石膏和硫酸钙填料的原料，部分矿床用于调节土壤和工业配料，晶体标本也有观赏和收藏价值。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

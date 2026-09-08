@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>石墨</h1><div class="en">Graphite</div></header><section><h2>简介</h2><p class="summary">石墨由sp²杂化碳原子组成平面六边形网层，层间作用力弱，因而容易剥离并具有良好润滑性；层内电子又使它能够导电和导热。片状、鳞片状集合体常由含碳沉积岩变质形成，高纯石墨可用于电极、坩埚、密封材料和核工业。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>石墨</td></tr><tr><th>英文名</th><td>Graphite</td></tr><tr><th>矿物名称</th><td>石墨</td></tr><tr><th>矿物分类</th><td>自然元素矿物</td></tr><tr><th>晶体化学式</th><td>C</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>六方晶系</td></tr><tr><th>晶类</th><td>复六方双锥晶类</td></tr><tr><th>空间群</th><td>D<sub>6h</sub><sup>4</sup>-P6<sub>3</sub>/mmc(2H)，D<sub>3d</sub><sup>5</sup>-R<span style="text-decoration: overline">3</SPAN>m(3R)</td></tr><tr><th>晶格常数</th><td><span class="param"><b>b</b> = 0.2462nm(2H)，0.2456nm(3R)</span>；<span class="param"><b>c</b> = 0.6711nm(2H)，1.0044nm(3R)</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 120°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -485,4 +497,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>铁黑色至钢灰色；透射光下为深蓝色</td><th>光泽</th><td>金属光泽，土状集合体光泽减弱</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>多色性</th><td>强</td></tr><tr><th>折射率</th><td>No=1.93-2.07（红光）；Ne=不可测（双折射极强）</td><th>摩氏硬度</th><td>1-2</td></tr><tr><th>相对密度</th><td>2.09-2.23</td><th>韧性</th><td>具挠性和可切性</td></tr><tr><th>其它</th><td colspan="3">导电性良好；具有滑感，易污手。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>石墨要求高温还原环境，分布最广的变质成因石墨多由含碳沉积物或煤层在区域、接触变质及岩浆侵入作用下转化而成，常见于片麻岩、片岩和石灰岩；煤层或碳质沉积物受到高温热液作用时也能生成石墨。</td></tr><tr><th>伴生矿物</th><td>变质石墨常与同一环境中稳定的硅酸盐矿物共生，陨石样品中还可见石墨与陨硫铁结核共同出现。</td></tr><tr><th>应用</th><td>石墨具有良好导电、导热和耐高温性能，可用于耐火材料、电极、润滑剂和电池负极，优质大鳞片石墨还用于导热膜及复合材料，晶体标本可供教学收藏。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>铁黑色至钢灰色；透射光下为深蓝色</td><th>光泽</th><td>金属光泽，土状集合体光泽减弱</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>多色性</th><td>强</td></tr><tr><th>折射率</th><td>No=1.93-2.07（红光）；Ne=不可测（双折射极强）</td><th>摩氏硬度</th><td>1-2</td></tr><tr><th>相对密度</th><td>2.09-2.23</td><th>韧性</th><td>具挠性和可切性</td></tr><tr><th>其它</th><td colspan="3">导电性良好；具有滑感，易污手。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/六方晶系/石墨/TB240HCXwwjyKJjSsppXXaxUpXa_!!928216809.jpg_q50.jpg_.webp" alt="石墨"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>石墨要求高温还原环境，分布最广的变质成因石墨多由含碳沉积物或煤层在区域、接触变质及岩浆侵入作用下转化而成，常见于片麻岩、片岩和石灰岩；煤层或碳质沉积物受到高温热液作用时也能生成石墨。</td></tr><tr><th>伴生矿物</th><td>变质石墨常与同一环境中稳定的硅酸盐矿物共生，陨石样品中还可见石墨与陨硫铁结核共同出现。</td></tr><tr><th>应用</th><td>石墨具有良好导电、导热和耐高温性能，可用于耐火材料、电极、润滑剂和电池负极，优质大鳞片石墨还用于导热膜及复合材料，晶体标本可供教学收藏。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

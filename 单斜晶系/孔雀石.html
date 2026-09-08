@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>孔雀石</h1><div class="en">Malachite</div></header><section><h2>简介</h2><p class="summary">孔雀石是铜矿床氧化带常见的碱式碳酸盐，鲜绿色与同心环带、葡萄状集合体构成类似孔雀羽纹的外观。不同生长阶段的细粒层叠记录了含铜溶液的反复渗流，抛光后纹理清晰，历史上也曾用作颜料和装饰石。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>孔雀石</td></tr><tr><th>英文名</th><td>Malachite</td></tr><tr><th>矿物名称</th><td>孔雀石</td></tr><tr><th>矿物分类</th><td>碳酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>单斜晶系</td></tr><tr><th>晶类</th><td>斜方柱晶类</td></tr><tr><th>空间群</th><td>P21/b</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 9.502 Å</span>；<span class="param"><b>b</b> = 11.974 Å</span>；<span class="param"><b>c</b> = 3.240 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 98.75°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -492,4 +504,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>亮绿色、暗绿色、黑绿色，块状常见条带；透射光下为绿色至黄绿色</td><th>光泽</th><td>金刚光泽至玻璃光泽，纤维状者呈丝绢光泽，块状呈土状光泽至暗淡光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>多色性</th><td>Np=近无色，Nm=黄绿色，Ng=深绿色</td></tr><tr><th>色散</th><td>强</td><th>折射率</th><td>Np=1.655；Nm=1.875；Ng=1.909</td></tr><tr><th>摩氏硬度</th><td>3½-4</td><th>相对密度</th><td>3.6-4.05</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>孔雀石形成于铜矿床氧化带，含铜硫化物氧化后生成的硫酸铜与碳酸盐或含碳酸根的水溶液反应即可沉淀；石灰岩发育、碳酸盐含量较高且氧化作用强的铜矿区尤其有利于其形成。</td></tr><tr><th>伴生矿物</th><td>常与蓝铜矿、赤铜矿、白铅矿、硅孔雀石和方解石相伴。</td></tr><tr><th>应用</th><td>富集的孔雀石可作为铜矿石，色带鲜明的块体还用于雕刻工艺品和制备绿色颜料。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>亮绿色、暗绿色、黑绿色，块状常见条带；透射光下为绿色至黄绿色</td><th>光泽</th><td>金刚光泽至玻璃光泽，纤维状者呈丝绢光泽，块状呈土状光泽至暗淡光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>多色性</th><td>Np=近无色，Nm=黄绿色，Ng=深绿色</td></tr><tr><th>色散</th><td>强</td><th>折射率</th><td>Np=1.655；Nm=1.875；Ng=1.909</td></tr><tr><th>摩氏硬度</th><td>3½-4</td><th>相对密度</th><td>3.6-4.05</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/单斜晶系/孔雀石/07408780017884570712146.jpg" alt="孔雀石"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>孔雀石形成于铜矿床氧化带，含铜硫化物氧化后生成的硫酸铜与碳酸盐或含碳酸根的水溶液反应即可沉淀；石灰岩发育、碳酸盐含量较高且氧化作用强的铜矿区尤其有利于其形成。</td></tr><tr><th>伴生矿物</th><td>常与蓝铜矿、赤铜矿、白铅矿、硅孔雀石和方解石相伴。</td></tr><tr><th>应用</th><td>富集的孔雀石可作为铜矿石，色带鲜明的块体还用于雕刻工艺品和制备绿色颜料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

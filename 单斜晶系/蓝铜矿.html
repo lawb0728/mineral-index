@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>蓝铜矿</h1><div class="en">Azurite</div></header><section><h2>简介</h2><p class="summary">蓝铜矿是铜矿床氧化带的深蓝色碱式碳酸盐，短柱状晶体、放射状集合体常与绿色孔雀石形成鲜明对比。颜色来自铜离子的配位环境，蓝铜矿粉末历史上曾被制成蓝色颜料，抛光标本则突出蓝绿过渡的层次。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>蓝铜矿</td></tr><tr><th>英文名</th><td>Azurite</td></tr><tr><th>矿物名称</th><td>蓝铜矿</td></tr><tr><th>矿物分类</th><td>碳酸盐矿物</td></tr><tr><th>晶体化学式</th><td>Cu<sub>3</sub>(CO<sub>3</sub>)<sub>2</sub>(OH)<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>单斜晶系</td></tr><tr><th>晶类</th><td>斜方柱晶类</td></tr><tr><th>空间群</th><td>P21/b</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5 Å</span>；<span class="param"><b>b</b> = 5.84 Å</span>；<span class="param"><b>c</b> = 10.35 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 92.33°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -489,4 +501,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>蓝铜蓝色、柏林蓝色、极深至浅蓝色；透射光下为浅蓝色</td><th>光泽</th><td>金刚光泽，玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>深浅不一的蓝色</td></tr><tr><th>折射率</th><td>Np=1.73；Nm=1.754-1.758；Ng=1.835-1.838</td><th>摩氏硬度</th><td>3½-4</td></tr><tr><th>相对密度</th><td>3.77</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蓝铜矿主要形成于铜矿床氧化带，通常稍晚于孔雀石并可被孔雀石交代，后期直接转化为赤铜矿或自然铜的情况较少，整体分布范围小于孔雀石。</td></tr><tr><th>伴生矿物</th><td>常与孔雀石、硅孔雀石、羟胆矾、块铜矾、赤铜矿、白铅矿、菱锌矿、方解石和白云石共生。</td></tr><tr><th>应用</th><td>蓝铜矿富集体可作为次要铜矿资源，现代更常用于矿物教学、地质找矿和标本收藏，色泽鲜艳的块体也可作观赏石或传统颜料原料。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>蓝铜蓝色、柏林蓝色、极深至浅蓝色；透射光下为浅蓝色</td><th>光泽</th><td>金刚光泽，玻璃光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>深浅不一的蓝色</td></tr><tr><th>折射率</th><td>Np=1.73；Nm=1.754-1.758；Ng=1.835-1.838</td><th>摩氏硬度</th><td>3½-4</td></tr><tr><th>相对密度</th><td>3.77</td><th>韧性</th><td>性脆</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/单斜晶系/蓝铜矿/06026730017888343522294.jpg" alt="蓝铜矿"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>蓝铜矿主要形成于铜矿床氧化带，通常稍晚于孔雀石并可被孔雀石交代，后期直接转化为赤铜矿或自然铜的情况较少，整体分布范围小于孔雀石。</td></tr><tr><th>伴生矿物</th><td>常与孔雀石、硅孔雀石、羟胆矾、块铜矾、赤铜矿、白铅矿、菱锌矿、方解石和白云石共生。</td></tr><tr><th>应用</th><td>蓝铜矿富集体可作为次要铜矿资源，现代更常用于矿物教学、地质找矿和标本收藏，色泽鲜艳的块体也可作观赏石或传统颜料原料。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

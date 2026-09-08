@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>黄铜矿</h1><div class="en">Chalcopyrite</div></header><section><h2>简介</h2><p class="summary">黄铜矿是常含少量金银的铜铁硫化物，黄铜色金属光泽和块状集合体最常见，晶体则较少见并可呈四面体形。表面氧化形成的蓝紫、绿色和金黄色锖膜很有观赏性，它广泛产于热液矿床，是炼铜的主要矿石。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>黄铜矿</td></tr><tr><th>英文名</th><td>Chalcopyrite</td></tr><tr><th>矿物名称</th><td>黄铜矿</td></tr><tr><th>矿物分类</th><td>硫化物</td></tr><tr><th>晶体化学式</th><td>CuFeS<sub>2</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>四方晶系</td></tr><tr><th>晶类</th><td>复四方偏三角面体晶类</td></tr><tr><th>空间群</th><td>I42d</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5.289 Å</span>；<span class="param"><b>b</b> = 5.289 Å</span>；<span class="param"><b>c</b> = 10.423 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -534,4 +546,22 @@ _citation_journal_id_ISSN
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>黄铜黄色、绿黄色，常带有杂斑状锖色</td><th>光泽</th><td>金属光泽</td></tr><tr><th>透明度</th><td>不透明</td><th>摩氏硬度</th><td>3½-4；维氏硬度为187-203</td></tr><tr><th>相对密度</th><td>4.1-4.3</td><th>韧性</th><td>性脆</td></tr><tr><th>其它</th><td colspan="3">导电性良好，温度升高时电阻率降低。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黄铜矿可在铜镍硫化物及钒钛磁铁矿床中高温结晶，与磁黄铁矿、镍黄铁矿密切共生；接触交代矿床中常充填或交代石榴石、透辉石，并与黄铁矿、磁铁矿、磁黄铁矿、毒砂、方铅矿、闪锌矿和辉钴矿共生，玢岩铁铜矿床中也很重要。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有黄铁矿、磁铁矿、磁黄铁矿、黝铜矿、毒砂、方铅矿、闪锌矿、辉钴矿及其他铜硫化物。</td></tr><tr><th>应用</th><td>黄铜矿是炼铜的主要矿石，所得铜凭借良好导电、导热和延展性用于电气、机械、交通、化工及国防工业，也可制备农业药剂、防腐涂料和多种合金。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>黄铜黄色、绿黄色，常带有杂斑状锖色</td><th>光泽</th><td>金属光泽</td></tr><tr><th>透明度</th><td>不透明</td><th>摩氏硬度</th><td>3½-4；维氏硬度为187-203</td></tr><tr><th>相对密度</th><td>4.1-4.3</td><th>韧性</th><td>性脆</td></tr><tr><th>其它</th><td colspan="3">导电性良好，温度升高时电阻率降低。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/四方晶系/黄铜矿/06777120017883727681993.jpg" alt="黄铜矿"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>黄铜矿可在铜镍硫化物及钒钛磁铁矿床中高温结晶，与磁黄铁矿、镍黄铁矿密切共生；接触交代矿床中常充填或交代石榴石、透辉石，并与黄铁矿、磁铁矿、磁黄铁矿、毒砂、方铅矿、闪锌矿和辉钴矿共生，玢岩铁铜矿床中也很重要。</td></tr><tr><th>伴生矿物</th><td>常见伴生矿物有黄铁矿、磁铁矿、磁黄铁矿、黝铜矿、毒砂、方铅矿、闪锌矿、辉钴矿及其他铜硫化物。</td></tr><tr><th>应用</th><td>黄铜矿是炼铜的主要矿石，所得铜凭借良好导电、导热和延展性用于电气、机械、交通、化工及国防工业，也可制备农业药剂、防腐涂料和多种合金。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

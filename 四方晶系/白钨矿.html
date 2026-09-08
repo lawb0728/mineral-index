@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>白钨矿</h1><div class="en">Scheelite</div></header><section><h2>简介</h2><p class="summary">白钨矿是钨酸钙矿物，白色、灰白色或浅黄色四方双锥晶体在紫外光下常出现蓝白色荧光。它多形成于花岗质热液脉和矽卡岩中，常与石英及硫化物共生，是钨的主要矿物之一。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>白钨矿</td></tr><tr><th>英文名</th><td>Scheelite</td></tr><tr><th>矿物名称</th><td>白钨矿</td></tr><tr><th>矿物分类</th><td>钨酸盐</td></tr><tr><th>晶体化学式</th><td>Ca(WO<sub>4</sub>)</td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>四方晶系</td></tr><tr><th>晶类</th><td>四方双锥晶类</td></tr><tr><th>空间群</th><td>I41/a</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 5.2429(3) Å</span>；<span class="param"><b>b</b> = 5.2429(3) Å</span>；<span class="param"><b>c</b> = 11.3737(6) Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 90°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -489,4 +501,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色少见，多为灰、浅黄、浅紫或浅褐色，有时带绿、桔黄或红色，可出现色带</td><th>光泽</th><td>玻璃光泽，金刚光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>折射率</th><td>No=1.935-1.938；Ne=1.918-1.921</td></tr><tr><th>摩氏硬度</th><td>4½-5</td><th>相对密度</th><td>6.1</td></tr><tr><th>其它</th><td colspan="3">短波紫外线下呈明亮蓝白色荧光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白钨矿可形成于接触交代矿床和中高温热液裂隙充填矿床，也常见于热液石英脉，原生矿床附近的砂矿中可因重力富集，伟晶岩中则仅少量出现。</td></tr><tr><th>伴生矿物</th><td>常与锡石、钨锰铁矿、托帕石、萤石、电气石、石英、磷灰石、钙铝榴石—钙铁榴石、透辉石、符山石和透闪石共生。</td></tr><tr><th>应用</th><td>白钨矿与黑钨矿并列为钨的主要矿石，可供提炼钨及其化合物，我国是重要的钨资源产地。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>无色、白色少见，多为灰、浅黄、浅紫或浅褐色，有时带绿、桔黄或红色，可出现色带</td><th>光泽</th><td>玻璃光泽，金刚光泽</td></tr><tr><th>透明度</th><td>透明至不透明</td><th>折射率</th><td>No=1.935-1.938；Ne=1.918-1.921</td></tr><tr><th>摩氏硬度</th><td>4½-5</td><th>相对密度</th><td>6.1</td></tr><tr><th>其它</th><td colspan="3">短波紫外线下呈明亮蓝白色荧光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/四方晶系/白钨矿/06062890017851822895584.jpg" alt="白钨矿"><img src="../矿物图片/四方晶系/白钨矿/O1CN01dbf0011bnAY5SXTyW_!!143733509.jpg_q50.jpg_.webp" alt="白钨矿"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>白钨矿可形成于接触交代矿床和中高温热液裂隙充填矿床，也常见于热液石英脉，原生矿床附近的砂矿中可因重力富集，伟晶岩中则仅少量出现。</td></tr><tr><th>伴生矿物</th><td>常与锡石、钨锰铁矿、托帕石、萤石、电气石、石英、磷灰石、钙铝榴石—钙铁榴石、透辉石、符山石和透闪石共生。</td></tr><tr><th>应用</th><td>白钨矿与黑钨矿并列为钨的主要矿石，可供提炼钨及其化合物，我国是重要的钨资源产地。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>

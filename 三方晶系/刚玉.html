@@ -43,6 +43,18 @@ section{background:transparent;margin:28px 0;padding:0;border-top:2px solid #d5e
   .structure-viewer canvas{height:100%;min-height:0!important}
   .source p{margin:5px 0}
 }
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.gallery img{width:100%;height:140px;object-fit:cover;border-radius:4px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.gallery img:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.lightbox{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);cursor:pointer}
+.lightbox.active{display:flex;align-items:center;justify-content:center}
+.lightbox img{max-width:90%;max-height:90vh;object-fit:contain;cursor:default}
+@media (max-width:768px){
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery img{height:120px}
+  .lightbox img{max-width:95%;max-height:85vh}
+}
 </style></head><body><main class="page"><a class="back" href="../index.html">← 返回矿物目录</a><header class="hero"><h1>刚玉</h1><div class="en">Corundum</div></header><section><h2>简介</h2><p class="summary">刚玉的莫氏硬度为9，仅次于金刚石；纯净晶体接近无色，铬、铁和钛等微量元素则分别造就红宝石、蓝宝石等颜色品种。它常见于变质岩和富铝火成岩，坚硬耐磨的特性使其既是宝石材料，也是磨料和耐火材料原料。</p></section><section><h2>基本信息</h2><table class="detail-table"><tbody><tr><th>中文名</th><td>刚玉</td></tr><tr><th>英文名</th><td>Corundum</td></tr><tr><th>矿物名称</th><td>刚玉</td></tr><tr><th>矿物分类</th><td>氧化物矿物</td></tr><tr><th>晶体化学式</th><td>Al<sub>2</sub>O<sub>3</sub></td></tr></tbody></table></section><section><h2>晶体参数</h2><table class="detail-table"><tbody><tr><th>晶系</th><td>三方晶系</td></tr><tr><th>晶类</th><td>复三方偏三角面体晶类</td></tr><tr><th>空间群</th><td>R3c</td></tr><tr><th>晶格常数</th><td><span class="param"><b>a</b> = 4.75 Å</span>；<span class="param"><b>b</b> = 4.75 Å</span>；<span class="param"><b>c</b> = 12.982 Å</span></td></tr><tr><th>晶格角度</th><td><span class="param"><b>α</b> = 90°</span>；<span class="param"><b>β</b> = 90°</span>；<span class="param"><b>γ</b> = 120°</span></td></tr></tbody></table></section><section><h2>晶体结构</h2>
   <div class="structure-controls" aria-label="晶体结构轴向视角">
     <button type="button" class="axis-button" data-axis="a" aria-label="沿 a 轴观察" aria-pressed="true">a</button>
@@ -517,4 +529,22 @@ _cod_related_entry_code
     })();
   </script>
 </div>
-</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>红色，蓝色，黄色，绿色，粉色等，从无色至彩色均有，可能出现色带</td><th>光泽</th><td>玻璃光泽至金刚光泽，断口面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，当颜色深时较强</td></tr><tr><th>折射率</th><td>No=1.767-1.772；Ne=1.759-1.763</td><th>摩氏硬度</th><td>9</td></tr><tr><th>相对密度</th><td>3.98-4.1</td><th>韧性</th><td>性脆，当紧密结合时较坚硬</td></tr><tr><th>其它</th><td colspan="3">熔点约2000-2030℃；无磁性；可发荧光或磷光。</td></tr></tbody></table></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>刚玉与岩浆作用以及接触、区域变质作用有关，常在富铝贫硅的正长岩、伟晶岩、斜长岩、云母岩和橄榄苏长岩中作为主要或副矿物富集成矿；火山期后热液作用形成的次生石英岩中可出现规模较大的矿床，安山岩、玄武岩和沉积铝土矿中也可见刚玉。</td></tr><tr><th>伴生矿物</th><td>常见组合包括中长石、奥长石、霞石、方柱石、尖晶石、金红石、方解石和石榴石。</td></tr><tr><th>应用</th><td>凭借仅次于金刚石的硬度，刚玉主要用作高级磨料和精密机械的轴承、耐磨部件；黄刚玉可作工艺材料，人工红宝石和蓝宝石则满足精密仪器及尖端技术的需要。</td></tr></tbody></table></section></main></body></html>
+</section><section><h2>物理性质</h2><table class="detail-table two-col"><tbody><tr><th>颜色</th><td>红色，蓝色，黄色，绿色，粉色等，从无色至彩色均有，可能出现色带</td><th>光泽</th><td>玻璃光泽至金刚光泽，断口面呈珍珠光泽</td></tr><tr><th>透明度</th><td>透明至半透明</td><th>多色性</th><td>弱，当颜色深时较强</td></tr><tr><th>折射率</th><td>No=1.767-1.772；Ne=1.759-1.763</td><th>摩氏硬度</th><td>9</td></tr><tr><th>相对密度</th><td>3.98-4.1</td><th>韧性</th><td>性脆，当紧密结合时较坚硬</td></tr><tr><th>其它</th><td colspan="3">熔点约2000-2030℃；无磁性；可发荧光或磷光。</td></tr></tbody></table></section><section><h2>矿物图片</h2><div class="gallery"><img src="../矿物图片/三方晶系/刚玉/O1CN01PsXKK51bnArl5n4q7_!!143733509.jpg_q50.jpg_.webp" alt="刚玉"></div></section><section><h2>地质与应用</h2><table class="detail-table"><tbody><tr><th>地质背景</th><td>刚玉与岩浆作用以及接触、区域变质作用有关，常在富铝贫硅的正长岩、伟晶岩、斜长岩、云母岩和橄榄苏长岩中作为主要或副矿物富集成矿；火山期后热液作用形成的次生石英岩中可出现规模较大的矿床，安山岩、玄武岩和沉积铝土矿中也可见刚玉。</td></tr><tr><th>伴生矿物</th><td>常见组合包括中长石、奥长石、霞石、方柱石、尖晶石、金红石、方解石和石榴石。</td></tr><tr><th>应用</th><td>凭借仅次于金刚石的硬度，刚玉主要用作高级磨料和精密机械的轴承、耐磨部件；黄刚玉可作工艺材料，人工红宝石和蓝宝石则满足精密仪器及尖端技术的需要。</td></tr></tbody></table></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const lb=document.createElement('div');
+  lb.className='lightbox';
+  lb.innerHTML='<img>';
+  document.body.appendChild(lb);
+  const lbImg=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',e=>{
+      e.stopPropagation();
+      lbImg.src=img.src;
+      lb.classList.add('active');
+    });
+  });
+  lb.addEventListener('click',()=>lb.classList.remove('active'));
+  lbImg.addEventListener('click',e=>e.stopPropagation());
+});
+</script></body></html>
